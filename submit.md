@@ -26,3 +26,11 @@
 
 
 </detail>
+
+
+<details open>
+<summary>System</summary>
+
+
+
+</detail>
