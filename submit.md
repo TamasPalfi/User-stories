@@ -5,7 +5,7 @@
 </details>
 
 
-<details open>
+<details>
 <summary>Members</summary>
 
 
