@@ -12,7 +12,7 @@
 </details>
 
 
-<details open>
+<details>
 <summary>Admin</summary>
 
 
@@ -20,7 +20,7 @@
 
 
 
-<details open>
+<details>
 <summary>Idol</summary>
 
 
@@ -28,7 +28,7 @@
 </detail>
 
 
-<details open>
+<details>
 <summary>System</summary>
 
 
