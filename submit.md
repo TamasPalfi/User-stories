@@ -25,7 +25,7 @@
 
 
 
-</detail>
+</details>
 
 
 <details>
@@ -33,4 +33,4 @@
 
 
 
-</detail>
+</details>
