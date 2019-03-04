@@ -2,21 +2,21 @@
 <summary>New Members</summary>
 
 
-<details>
+</details>
 
 
 <details open>
 <summary>Members</summary>
 
 
-<details>
+</details>
 
 
 <details open>
 <summary>Admin</summary>
 
 
-<details>
+</details>
 
 
 
@@ -25,4 +25,4 @@
 
 
 
-<detail>
+</detail>
