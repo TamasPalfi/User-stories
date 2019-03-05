@@ -34,7 +34,7 @@ Alex will login to their profile. Alex will navigate to their settings page on t
 <br><br>
 ## Member Confirms Tri-Monthly Credit Card Charge
 <br>
-System will tell the credit card software it is time to charge Alex. Credit card system will charge member a random amount between $0.20 and $0.40. System will send automated email at specified time period telling member to validate the charge made to their account. Email will include a link that will direct the user to the page to enter the amount charged. System will start a timer for 3 days. Alex will login to their personal bank account and check for the charge from Members Only. Alex will click link provided in email. Alex will be redirected to the webpage with a form where they can enter the amount they were charged by the system. Alex will fill in the text box with that amount. Alex will hit the “Submit form” button. Webserver will receive this information and back end services will process it. System will compare this amount to the amount that was charged. If right, member will be directed back to the Members Only home page. If wrong, member will be blocked out of Members Only until they enter the right amount. <br>
+System will tell the credit card software it is time to charge Alex. Credit card system will charge member a random amount between $0.20 and $0.40. System will send automated email at specified time period telling member to validate the charge made to their account. Email will include a link that will direct the user to the page to enter the amount charged. System will start a timer for 3 days. Alex will login to their personal bank account and check for the charge from Members Only. Alex selects link provided in email. Alex is redirected to the webpage with a form where they can enter the amount they were charged by the system. Alex will fill in the text box with the correct amount. Alex will hit the “Submit” button. Webserver will receive this information and back end services will process it. System will compare this amount to the amount that was charged. If right, member will be directed back to the Members Only home page. If wrong, member will be blocked out of Members Only until they enter the right amount. <br>
 Member does not enter the amount in time<br>
 Alex doesn’t enter amount in time and is blocked from account. When Alex tries to access Members Only, they will be directed to a page telling them to send another charge. System tells credit card system to send another charge between $0.20 and $0.40. Credits card system sends another random charge. System sends Alex another email. System starts a timer for 3 days. Alex logs into their bank account and sees the charge from Members Only. Alex clicks button on email and is redirected to Members Only. Alex enters amount in and is either allowed back to website or entered the wrong amount.<br>
 <br>
@@ -71,8 +71,30 @@ Alex navigated to profile page and clicks on the photo they wish to remove the f
 Member Adds Spondored Content<br>
 Alex will follow the posting photos process. Alex will then click add content. Alex can choose any of the items and place them anywhere in their photo using a drag and drop method. Alex will choose to submit their altered photo. The Web Server will receive the request and send it to backend services. Backend services will process and post the request. Backend will save image to database. Admins can access image and add/delete content as they please.<br>
 Member Removes Sponsored Content<br>
-Alex will go to their photo with added content. Alex will select options and be given an option to remove content from the photo. Alex will be shown what is added content in their photo such that they can navigate to it and choose to remove it. Alex will submit their changes. The Web Server will receive the request and send it to backend services. Backend services will process and post the request. Backend services will save image to the database. Admins can use image to add/remove/etc. Original poster will not be able to see these changes. 
+Alex will go to their photo with added content. Alex will select options and be given an option to remove content from the photo. Alex will be shown what is added content in their photo such that they can navigate to it and choose to remove it. Alex will submit their changes. The Web Server will receive the request and send it to backend services. Backend services will process and post the request. Backend services will save image to the database. Admins can use image to add/remove/etc. Original poster will not be able to see these changes.
+ 
+ ### Member Flags Photo As Inappropriate/Illegal
+Alex is browsing Members Only and comes across a photo they believe to be inappropriate
+and/or illegal. Alex proceeds to select the “Report” button under said photo. They are then
+prompted with a textbox asking for comments on reasoning for reporting the photo. Alex enters
+details on why they believe the content to be inappropriate and/or illegal. Alex proceeds to
+select the “Confirm” button under the textbox. After selecting confirm, Alex is returned to the
+homepage of Members Only. 
+After hitting confirm, the web server receives the report. The web server sends the report to
+backend services. Backend services will process the report, and send to Administrators for
+further action.
 
+### Member Invites Potential New Member
+Alex is enjoying *Member's Only* and wants to enjoy it with their friend Jessica. Alex wants to send an invitation link to join *Member's Only*. The cost to perform this is 1000 points. Alex has the correct amount of points required to invite Jessica, so they navigate to their profile page. From their profile page, Alex selects the "Invite New Member" button. They are then redirected to a new webpage with a form to fill out. The form includes the required fields of email address, name, and an optional dropdown menu of how Alex knows Jessica. Alex fills in Jessica's valid email address and her full name. Alex does not want *Member's Only* knowing how they know Jessica, so this field is left blank. Alex selects "Submit" and is redirected to a page confirming that an invitation link has been sent to Jessica at her provided email address. If Jessica joins *Members Only*, Alex receives 50 points. If the invitation link expires after 4 days, Alex loses 100 points.
+The Web Server receives the submission and passes it to backend services. Backend services receives the submission and sends out an invtation link to the provided email address. Backend services keeps track of how long the email has been out before it is accepted or ignored.
+
+### Member Unfollows Another Member
+Alex has decided he no longer wants to see Brian's updates on *Members Only* because his posts are annoying. Thankfully, Alex did not invite Brian so he can do this. Alex navigates to Brian's profile page where they select the "Unfollow" button on Brian's page. Alex is then met with a confirmation popup, "Are you sure you want to unfollow **Brian**?". They confirm their choice to unfollow Brian by selecting the "Yes" button. Alex is then redirected to the *Members Only* homepage. Alex can no longer see any of Brian's updates - which he is very happy about. 
+Backend services removes Brian from Alex's follower's list.
+
+### Member Blocks Another Member
+Jessica has just broken with Alex, and Alex has been sending threatening messages to Jessica. He won't leave her alone on *Member's Only*. She has decided that it's in her best interest to block Alex. Jessica navigates to Alex's profile page on *Members Only*. She selects the "Block" button on Alex's page, where she is met with a confirmation popup with an optional "Reason For Blocking" textbox. Jessica decides to give the details of her experience in this textbox. She then confirms "Are you sure you want to block **Alex**? **This action cannot be undone.**" Jessica selects the "Yes" confirmation button. She is returned to the *Member's Only* homepage, and all communication between Jessica and Alex is blocked.
+Backend services receives information from web server and blocks Alex from accessing Jessica's profile, information and any form of contact. The Web Server sends the report to Administrators. Administrators review the report, deciding if further action is required.
 
 </details>
 
@@ -96,28 +118,28 @@ Alex will go to their photo with added content. Alex will select options and be 
 <details>
 <summary>System</summary>
 
-### The system deducts a point from the member  
+### The System Decuts Points From Member  
 The backend receives a request from the frontend. The backend sent a request to the credit card company using a credit card software.
 If the credit card is denied, the system freezes the member’s account and changes the permission of the member in a database. 
 If the request is successful, the database finds the matched member and takes a point off. Then the system sends updated point information to the frontend. The frontend updates the point information in a local storage and Alex will recoginize the changes.
 
-### The system awards a point from a member  
+### The System Awards Points To Member  
 Alex’s invitation gets accepted or he makes positive actions. The backend receives a request. The database finds the matched member information in a database and updates the matched member's information. The system sends updated point information to the frontend. The system updates the point information in a local storage and Alex will recognize the changes. 
 
-### The system gets a login request from a frontend 
+### The System Receives a Login Request From Frontend 
 A frontend sends a login request to a backend. The backend gets a request that contains user information. The backend stores a member's current IP address into the database. The backend confirms whether the information given is matched with one of the user data in the database. The backend sends tokens and matched user information to the frontend. 
 
-### The system gets a logout request from a frontend   
+### The System Receives a Logout Request From Frontend   
  Alex clicks a logout button in a frontend. The frontend detects when the logout button is clicked. The frontend sends a Alex’s singed out time to a backend. The backend stores Alex's logout time. The frontend destroys the session data in a local storage. The frontend redirects Alex to a landing page. 
 
-### The system gets a registration request from a frontend 
-A potential member(Bob) fills out a registration form and clicks the register button. The backend gets a request that contains a potential user’s information 
-If the credit card information already exists, the backend sends an error to the frontend  and bob checks the error . If the credit card information does not exist in the database, The system checks the given credit card information is valid using credit card software. If the data is valid, the system stores new user information into the database. The frontend redirects Bob to a login page. 
+### The System Receives a Registration Request From Frontend 
+A potential new member, Bob, fills out a registration form and selects the "Register" button. The backend receives the request containing the Bob's information.
+If the credit card information already exists, the backend sends an error to the frontend and Bob checks the error. If the credit card information does not exist in the database, The system checks the given credit card information is valid using credit card software. If the data is valid, the system stores new user information into the database. The frontend redirects Bob to a login page. 
 If the data is NOT valid, the backend sends an error to the frontend and Bob checks the error. 
 
-### The system collects a member’s interest
+### The System Collects Member's Interests (Data)
 Alex performs specific expected actions. The frontend detects an item being clicked when a member clicks a specific post or recognizes an item(content) on the current screen (if a member stays longer than a particular second at the same page without scrolling down or going out to other pages). The frontend sends the item(content) information to the backend. The backend receives the data and stores them in the database.
 
-### A system converts the original URL to the shortened URL 
+### The System Converts URL to shortened URL 
 The frontend sends the request to a backend. Then the frontend sends a request to the backend with original URL information. The backend gets the request and uses a hash function to generate a shortened URL. The system saves the shortened URL into the database. The system sends the shortened URL to the frontend. In the case of the system can't perform shortening, it will use the original URL. 
 </details>
