@@ -305,6 +305,6 @@ If the data is NOT valid, the backend sends an error to the frontend and Bob che
 ### 36. System Retains Member's Actions (Interests)
 Alex performs specific expected actions. The frontend detects an item being clicked when a member clicks a specific post or recognizes an item(content) on the current screen (if a member stays longer than a particular second at the same page without scrolling down or going out to other pages). The frontend sends the item(content) information to the backend. The backend receives the data and stores them in the database.
 
-### 37. System converts URL to the shortened URL 
+### 37. System Converts URL to Shortened URL 
 The frontend sends the request to a backend. Then the frontend sends a request to the backend with original URL information. The backend gets the request and uses a hash function to generate a shortened URL. The system saves the shortened URL into the database. The system sends the shortened URL to the frontend. In the case of the system can't perform shortening, it will use the original URL. 
 </details>
