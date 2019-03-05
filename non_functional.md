@@ -58,6 +58,7 @@
 <details>
     <summary>Member</summary>
     - email
+    <br>
     - password
 </details>
 
