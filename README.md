@@ -16,9 +16,6 @@ Idols are our bedrock from which we build the site. We will pay Idols to be some
 
 Administrators are our next enhanced Member. First and foremost, we have admins to keep the peace. Admins will manually review any flagged content to make sure that no illicit material makes it on to Members Only. Although Members Only is a gated community, we do not want to establish a reputation for allowing unlawful material on our site. Furthermore, admins will solve disputes between Members, effectively making sure that our Members are happy on the site. Finally, admins will be able to insert sponsored content and different filters into other Members photos as to please advertisers of the site. Additionally, administrators will be able to add links, comments, and other materials into Members posts for advertising and any other purposes of the site. And of course, the original poster will not be able to see the changes that were made to their posts, but everyone else on the site will be able to. 
 
-
-
-
 # User Stories
 
 <details>
