@@ -55,60 +55,35 @@
 - Much more query features of SQL than MySQL.
 
 ***Our Preliminary Tables and their Associated Values***
-<details>
-    <summary>Member</summary>
-        - email: string
-    <br>
-        - password: string
-    <br>
-        - isAdmin: boolean
-    <br>
-        - points: integer
-    <br>
-        - credit_card_number: integer
-    <br>
-        - credit_card_cvv: integer
-    <br>
-        - is_private: boolean
-</details>
+- Member
+    - email: string
+    - password: string
+    - isAdmin: boolean
+    - points: integer
+    - credit_card_number: integer
+    - credit_card_cvv: integer
+    - is_private: boolean
 
-<details>
-    <summary>Post</summary>
-        - text: string
-    <br>
-        - date_time: date and time field
-    <br>
-        - user_key: key that links post to user
-</details>
+- Post
+    - text: string
+    - date_time: date and time field
+    - user_key: key that links post to user
 
-<details>
-    <summary>Comments</summary>
-        - text: string
-    <br>
-        - date_time: date and time field
-    <br>
-        - post_key: key to linked post
-    <br>
-        - user_key: key to specific user
-</details>
+- Comments
+    - text: string
+    - date_time: date and time field
+    - post_key: key to linked post
+    - user_key: key to specific user
 
-<details>
-    <summary>Photos</summary>
-        - photo: image file
-    <br>
-        - user_key: key to associated user
-</details>
+- Photos
+    - photo: image file
+    - user_key: key to associated user
 
-<details>
-    <summary>Filtered Photos</summary>
-        - photo: image file
-    <br>
-        - filter: tracks added content or filter
-    <br>
-        - photo_key: key to original photo
-    <br>
-        - user_key: key to associated user
-</details>
+- Filtered Photos
+    - photo: image file
+    - filter: tracks added content or filter
+    - photo_key: key to original photo
+    - user_key: key to associated user
 
 ### Application Map
 
