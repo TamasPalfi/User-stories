@@ -10,7 +10,7 @@ Members are our users. They are the the traffic, the data, and most importantly:
 
 ## Idols
 
-Idols are our bedrock from which we build the site. We will pay Idols to be some of the first enhanced Members on the site. Enhanced meaning that they have all the functionality of a normal Member, but they also have unlimited points and invitation codes which they can use to send invitations to *Members Only* to all of their fans. In this sense, Idols are the first step in attracting large waves of Members to join the site and get it off the ground. Once on the site, Members can see all of their idols updates, effectively joining the community of the Idols. 
+Idols are our bedrock from which we build the site - and draw in New Members. Idols are paid and are the *enhanced* Members. Enhanced meaning that they have all the functionality of a normal Member, but with the addition of unlimited points and invitation codes, which are used to send invitations to potential New Members - namely, their fanbase. In this sense, Idols are the first step to attracting large waves of Members to join *Members Only* and really build it's user base. Once on the site, Members can see all of their idols updates, effectively joining the community of the Idols. 
 
 ## Administrators
 
