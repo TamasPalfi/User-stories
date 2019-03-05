@@ -155,12 +155,12 @@ Phil wants to report another member on Members Only for an offensive action. Phi
 <details>
 <summary>System</summary>
 
-### The system deducts a point from the member  
+### The system deducts a point to the member  
 The backend receives a request from the frontend. The backend sent a request to the credit card company using a credit card software.
 If the credit card is denied, the system freezes the member’s account and changes the permission of the member in a database. 
 If the request is successful, the database finds the matched member and takes a point off. Then the system sends updated point information to the frontend. The frontend updates the point information in a local storage and Alex will recoginize the changes.
 
-### The system awards a point from the member  
+### The system awards a point to the member  
 Alex’s invitation gets accepted or he makes positive actions. The backend receives a request. The database finds the matched member information in a database and updates the matched member's information. The system sends updated point information to the frontend. The system updates the point information in a local storage and Alex will recognize the changes. 
 
 ### The system gets a login request from the frontend 
