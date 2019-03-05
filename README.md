@@ -33,17 +33,33 @@ Josh gets sent a link from a friend to join Members Only. Naturally, Josh is ver
 ### Signing Up With a Code
 
 Brianna manages to get her hands on an invitation code to Members Only from one of her favorite idols. To use this, Brianna navigates to the Members Only site and is brought to the login page. Since Brianna doesn’t currently have an account, she will have to choose the option to sign up with a code. After clicking this, Brianna will be brought to a new web page where she will be asked to enter her code. Brianna will enter the code and then hit a submit button. Afterwards, she will be brought through the same account creation process as described previously. 
+ - Non-Functional Aspects:
+   - Web Server receives form submission
+   - Web Server sends to Django backend
+   - Django backend sends automated email
+   - Member's data get sends to database through interface calls
 
 ### New Member Invitation Link Expires
 
 Liam receives an invitation link to Members Only. However, he is very busy and forgets to about it for more than 4 days. Because of this, the email link will expire, and he will lose this opportunity to join the site. To be able to join again he will have to be sent another invitation link. 
+ - Non-Functional Aspects:
+   - Django backend keeps track of how long unnaccepted invitation has been sent out
+   - Django backend terminates validity of invitation instance
 
 ### New Member Confirms Credit Card Charges
 After successfully creating her account, Catherine will have to enter her credit card details so that we can confirm she is who she says she is. Catherine will receive an email to confirm her payment details. Catherine will select this link which will bring her to a form on the Members Only site where she will enter a valid 16-digit credit card number, the name the card is under, the expiration date of the card, and the 3 digit CVV associated with the credit. Catherine will then choose to SUBMIT this form. She will then be brought back to her Members Only page. 
+ - Non-Functional Aspects:
+   - Web Server receives form submission
+   - Web Server sends to Django backend
+   - Member's data get sends to database through interface calls
 
 ### New Member Confirms Credit Card Charge
 
 After Catherine successfully enters her credit card information, she will be charged a random amount between $0.20 and $0.45 that she will need to confirm on the Members Only site to verify she is who she says she is. Catherine will receive an email shortly after creating her account that notifies her that she has been charged for the first time. Catherine will then navigate to her online banking and check for a charge from Members Only. After finding the charge, Catherine will remember the amount and navigate back to notification email from Members Only. Catherine will select the hyperlink in the email that brings her to a form with an entry field for the value of the charge. Catherine will then enter the charge amount and select SUBMIT. If she submits the correct amount then she is brought back to her Members Only page as a verified Member. Else, she will be asked to resubmit the amount she was charged until she submits the right amount. 
+ - Non-Functional Aspects:
+   - Django backend sends automated credit card charge using Stripe.js
+   - Web Server receives charge amount input
+   - Django receives input and validates it is the same as amount charged
 
 
 
@@ -56,22 +72,42 @@ After Catherine successfully enters her credit card information, she will be cha
 ### Member updates credit card information
 
 Alex will login to their profile. Alex will navigate to their settings page on their personal profile. Member will choose change credit card button. System will prompt user with text boxes to enter new credit card information. User will enter name of card. User will enter card number. User will enter expiration date. User will enter CVV. Alex will hit the submit form button. Credit card will then be verified to make sure it is valid. System will send this to the database to update the current credit card information with this information. Credit card information updates.
+ - Non-Functional Aspects:
+   - Web Server receives form submission
+   - Web Server sends to Django backend
+   - Django backend accesses database through interface calls to update information associated with particular Member
 
 ### Member Confirms Tri-Monthly Credit Card Charge
 
 System will tell the credit card software it is time to charge Alex. Credit card system will charge member a random amount between $0.20 and $0.40. System will send automated email at specified time period telling member to validate the charge made to their account. Email will include a link that will direct the user to the page to enter the amount charged. System will start a timer for 3 days. Alex will login to their personal bank account and check for the charge from Members Only. Alex will click link provided in email. Alex will be redirected to the webpage with a form where they can enter the amount they were charged by the system. Alex will fill in the text box with that amount. Alex will hit the “Submit form” button. Webserver will receive this information and back end services will process it. System will compare this amount to the amount that was charged. If right, member will be directed back to the Members Only home page. If wrong, member will be blocked out of Members Only until they enter the right amount.
+- Non-Functional Aspects:
+   - Django backend sends automated credit card charge using Stripe.js
+   - Web Server receives charge amount input
+   - Django receives input and validates it is the same as amount charged
 
 ### Member does not enter the amount in time
 
-Alex doesn’t enter amount in time and is blocked from account. When Alex tries to access Members Only, they will be directed to a page telling them to send another charge. System tells credit card system to send another charge between $0.20 and $0.40. Credits card system sends another random charge. System sends Alex another email. System starts a timer for 3 days. Alex logs into their bank account and sees the charge from Members Only. Alex clicks button on email and is redirected to Members Only. Alex enters amount in and is either allowed back to website or entered the wrong amount.<br>
+Alex doesn’t enter amount in time and is blocked from account. When Alex tries to access Members Only, they will be directed to a page telling them to send another charge. System tells credit card system to send another charge between $0.20 and $0.45. Credits card system sends another random charge. System sends Alex another email. System starts a timer for 3 days. Alex logs into their bank account and sees the charge from Members Only. Alex clicks button on email and is redirected to Members Only. Alex enters amount in and is either allowed back to website or entered the wrong amount.
+- Non-Functional Aspects:
+   - Django backend sends automated credit card charge using Stripe.js
+   - Web Server receives charge amount input
+   - Django receives input and validates it is the same as amount charged
 
 ### Member posts a status update on personal profile.
 
-Alex will click an option on their profile page that reads “create new post”. Alex will type URL, and can add any additional text to the post. tinyURL generator will shorten the URL given. Alex will hit “post”. The webserver will receive the request send it to the backend. Backend will process the request and post Alex link to their profile feed. Backend services will send the link to the database to store it as something Alex is interested in for potential future advertisement reasons.<br>
+Alex will click an option on their profile page that reads “create new post”. Alex will type URL, and can add any additional text to the post. tinyURL generator will shorten the URL given. Alex will hit “post”. The webserver will receive the request send it to the backend. Backend will process the request and post Alex link to their profile feed. Backend services will send the link to the database to store it as something Alex is interested in for potential future advertisement reasons.
+- Non-Functional Aspects:
+   - Web Server receives new post
+   - Django backend receives post information and posts it
+   - Django backend uses database interface to update post table with new post 
 
 ### Member leaves comment on friend’s status.
 
-Alex will see their friend’s status on their profile feed. Alex will click the comment button that appears on the bottom of their friend’s post. The Webserver will get the request and pop up a text box overlay on the website. Alex will leave a comment, then hit “Post”. The Webserver will receive the request and send it to the backend services. Backend services will add it to the friend’s comment section on their post. <br>
+Alex will see their friend’s status on their profile feed. Alex will click the comment button that appears on the bottom of their friend’s post. The Webserver will get the request and pop up a text box overlay on the website. Alex will leave a comment, then hit “Post”. The Webserver will receive the request and send it to the backend services. Backend services will add it to the friend’s comment section on their post.
+- Non-functional Aspects:
+   - Web Server receives new post
+   - Django backend receives comment information and posts it
+   - Django backend uses database interface to update comment table with new post 
 
 ### Member invites a non-member to Members Only so that they can enjoy Members Only with them
 
