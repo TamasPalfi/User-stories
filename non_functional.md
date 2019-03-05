@@ -2,7 +2,7 @@
 
 ### FrontEnd 
 ***React.js***   
-- React is very a simple and lightweight library that only deals with the view layer. It is not a beast like other MV* frameworks such as Angular or Ember. Since, one team is going to take care of the frontend, it's good for them to only focus on view layer. 
+- React is very a simple and lightweight library that only deals with the view layer. It is not a beast like other MV* frameworks such as Angular or Ember. Since, one team is going to take care of the frontend, it's good for them to only focus on view layer using React.js 
 
 - React provides a component based structure. As a result:
     - your app has consistent look and feel.
@@ -44,15 +44,16 @@
 ### Database 
 ***PostgreSQL***
 
-- Data model. 
-- Is not just relational but object-relational. Advantageous over other open source SQL databases such as MySQL, MariaDB and Firebird. 
-- Data types and structures. 
-- Extensive list of data types that PostgreSQL supports. 
-- Network addresses. 
-- PostgreSQL allows storing different network address types. 
-- Multi-dimensional arrays. 
-- PostgreSQL is an object-relational database, so arrays of values can be stored for most existing data types. 
-- JSON support. 
-- Allows you to go schema-less in an SQL database. 
-- Create new types. 
-- Use CREATE TYPE command to create new data types as composite, enumerated, range and base. 
+- Postgres has a strongly typed schema that leaves very little room for errors. Developers first create the schema for a table and then add rows to the table. They can also define relationships between different tables with rules so that they can store related data across several tables and avoid data duplication
+
+- Developers can put all the complex logic in a custom function, index it and the searches will be super fast. 
+
+- PostgreSQL is an object-relational database, so arrays of values can be stored for most existing data types.
+
+- Is not just relational but object-relational. Advantageous over other open source SQL databases such as MySQL, MariaDB and Firebird.
+
+- Much more query features of SQL than MySQL.
+
+### Application Map
+
+![](done.jpg)
