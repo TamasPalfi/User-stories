@@ -30,7 +30,6 @@ Josh receives a link from a friend to join *Members Only*. Naturally, Josh is ve
    - Member's data get sends to database through interface calls
 
 ### 2. New Member Signs Up For *Members Only* From Invitation Code
-
 Brianna manages to get her hands on an invitation code to *Members Only* from one of her favorite Idols. To use this, Brianna navigates to the *Members Only* site and is brought to the Login page. Brianna will select "Sign Up With Invitation Code". Upon selecting this, Brianna is brought to a new webpage where she is asked to enter her code. Brianna will enter the code correctly and then select a "Submit" button. Afterwards, she will be brought through the same account creation process as described previously. 
  - Non-Functional Aspects:
    - Web Server receives form submission
@@ -39,28 +38,24 @@ Brianna manages to get her hands on an invitation code to *Members Only* from on
    - Member's data get sends to database through interface calls
 
 ### 3. New Member's Invitation Link Expires
-
 Liam receives an invitation link to *Members Only*. However, he is very busy and forgets to about it for more than 4 days. Because of this, the email link will expire, and he will lose this opportunity to join the site. To be able to join again he will have to be sent another invitation link. 
  - Non-Functional Aspects:
    - Node.js backend keeps track of how long unnaccepted invitation has been sent out
    - Node.js backend terminates validity of invitation instance
 
 ### 4. New Member Confirms Credit Card Details
-After successfully creating her account, Catherine will have to enter her credit card details so that we can confirm she is who she says she is. Catherine will receive an email to confirm her payment details. Catherine will select this link which will bring her to a form on the *Members Only* site where she will enter a valid 16-digit credit card number, the name the card is under, the expiration date of the card, and the 3 digit CVV associated with the credit. Catherine will then choose to SUBMIT this form. She will then be brought back to her *Members Only* page. 
+Upon successful creation of her account, Catherine will need to enter her credit card details in order to confirm her identity. Upon successful account creation, Catherine receives an email to confirm her payment details. Catherine will select this link, bringing her to a form on the *Members Only* website. The form has required fields of a valid 16-digit credit card number, her full name, expiration date, and 3-digit CVV. Catherine will then select "Submit". Once approved, she will be brought to her *Members Only* account page.
  - Non-Functional Aspects:
    - Web Server receives form submission
    - Web Server sends to Node.js backend
    - Member's data get sends to database through interface calls
 
 ### 5. New Member Confirms Credit Card Charge
-
-After Catherine successfully enters her credit card information, she will be charged a random amount between $0.20 and $0.45 that she will need to confirm on the *Members Only* site to verify she is who she says she is. Catherine will receive an email shortly after creating her account that notifies her that she has been charged for the first time. Catherine will then navigate to her online banking and check for a charge from *Members Only*. After finding the charge, Catherine will remember the amount and navigate back to notification email from *Members Only*. Catherine will select the hyperlink in the email that brings her to a form with an entry field for the value of the charge. Catherine will then enter the charge amount and select SUBMIT. If she submits the correct amount then she is brought back to her *Members Only* page as a verified Member. Else, she will be asked to resubmit the amount she was charged until she submits the right amount. 
+After Catherine successfully confirms her credit card information, she will be charged a random amount between $0.20 and $0.45 that she will need to confirm on the *Members Only*. Catherine will receive an email shortly after submitting her credit details, notifying her that her credit card has been charged for the first time. Catherine will need to confirm the amount charged by *Members Only*. After confirming the charge, Catherine will navigate to the notification email from *Members Only*. Catherine will select the hyperlink in the email, bringing her to a form with an entry field for the value of the charge. Catherine will then enter the correct charge amount and select "Submit". Upon submitting the correct amount, she is brought back to her *Members Only* page as a verified Member. Otherwise, she will be asked to resubmit the correct amount she was charged, and will be locked out after 3 failed attempts.
  - Non-Functional Aspects:
    - Node.js backend sends automated credit card charge using Stripe.js
    - Web Server receives charge amount input
    - Node.js receives input and validates it is the same as amount charged
-
-
 
 </details>
 
@@ -69,29 +64,26 @@ After Catherine successfully enters her credit card information, she will be cha
 <summary>Members</summary>
 
 ### 15. Member Logs in to *Members Only*
-
-Johnson wants to login in to *Members Only* and check his feed. To do this, Johnson will navigate to the *Members Only* homepage, which includes a login for existing users form. Johnson will enter his email address and password associated with his *Members Only* account. Johnson will then select LOGIN at the bottom of the form. If his email and password are correct, he will then be redirected to his *Members Only* feed. 
+Johnson wants to log into *Members Only* and check his feed. To do this, Johnson will navigate to the *Members Only* homepage, which includes a login for existing users form. Johnson will enter his email address and correct password associated with his *Members Only* account. Johnson will then select "Login". If the correct email/password combination are entered, he will then be redirected to his *Members Only* feed. 
 - Non-functional Aspects:
    - Web Server receives form submission
    - Node.js backend receives login request and validates credentials
 
 ### 6. Member Updates Credit Card Information
-
-Alex will login to their profile. Alex will navigate to their settings page on their personal profile. Member will choose change credit card button. System will prompt user with text boxes to enter new credit card information. User will enter name of card. User will enter card number. User will enter expiration date. User will enter CVV. Alex will hit the submit form button. Credit card will then be verified to make sure it is valid. System will send this to the database to update the current credit card information with this information. Credit card information updates.
+Alex must be logged into *Members Only*. From the homepage, he will select "Settings" and be redirected to a *Members Only* webpage. He will then select "Change Payment Details". Alex will now need to confirm his new credit card details [SEE #4]. He will also need to confirm a credit charge [SEE #5].
  - Non-Functional Aspects:
    - Web Server receives form submission
    - Web Server sends to Node.js backend
    - Node.js backend accesses database through interface calls to update information associated with particular Member
 
-### 7. Member Fails to Confirm Tri-Monthly Credit Card Charge
-
-System will tell the credit card software it is time to charge Alex. Credit card system will charge member a random amount between $0.20 and $0.40. System will send automated email at specified time period telling member to validate the charge made to their account. Email will include a link that will direct the user to the page to enter the amount charged. System will start a timer for 4 days. Alex will login to their personal bank account and check for the charge from *Members Only*. Alex will select the link provided in email. Alex will be redirected to the webpage with a form where they can enter the amount they were charged by the system. Alex will fill in the text box with that amount. Alex will hit the “Submit form” button. Webserver will receive this information and back end services will process it. System will compare this amount to the amount that was charged. If right, member will be directed back to the *Members Only* home page. If wrong, member will be blocked out of *Members Only* until they enter the right amount.
+### 7. Member Confirms Tri-Monthly Credit Card Charge
+Every 3 months, Alex will receive a random credit card charge between the amounts $0.20 and $0.45. He will receive an automated email at specified time period asking him to validate the charge made to his account. He will then select the link within the email. For confirming a credit card charge [SEE # 5]. This must be done within 4 days of receiving the original email. If done correctly, Alex will be able to continue using *Members Only* until his next Tri-Monthly charge.
 - Non-Functional Aspects:
    - Node.js backend sends automated credit card charge using Stripe.js
    - Web Server receives charge amount input
    - Node.js receives input and validates it is the same as amount charged
 
-### 8. Member Fails to Enter Correct Charge Before Expiration
+### 8. Member Fails to Confirm Tri-Monthly Charge Before Expiration
 Alex does not enter the correct charge amount before expiration (4 days), and is blocked from using *Members Only*. When Alex tries to access *Members Only*, they are directed to a page asking to send an additional charge. Alex selects "Confirm" button. Alex's credit card is charged a random amount between $0.20 and $0.45. Alex receives another email and selects the link within the email. They are redirected to *Member's Only* where they enter the correct charge amount. Alex's use of *Members Only* is restored.
 - Non-Functional Aspects:
    - Node.js backend sends automated credit card charge using Stripe.js
@@ -99,7 +91,6 @@ Alex does not enter the correct charge amount before expiration (4 days), and is
    - Node.js receives input and validates it is the same as amount charged
 
 ### 9. Member Posts a Status Update on Personal Profile
-
 Alex will select an option on their profile page that reads “create new post”. Alex will type URL, and can add any additional text to the post. tinyURL generator will shorten the URL given. Alex will hit “post”. The webserver will receive the request send it to the backend. Backend will process the request and post Alex link to their profile feed. Backend services will send the link to the database to store it as something Alex is interested in for potential future advertisement reasons.
 - Non-Functional Aspects:
    - Web Server receives new post
@@ -107,14 +98,13 @@ Alex will select an option on their profile page that reads “create new post�
    - Node.js backend uses database interface to update post table with new post 
 
 ### 10. Member Leaves Comment on Other Member's Status
-
 Alex will see their friend’s status on their profile feed. Alex will select the “Comment” button that appears on the bottom of their friend’s post. The Webserver will get the request and pop up a text box overlay on the website. Alex will leave a comment, then hit “Post”. The Webserver will receive the request and send it to the backend services. Backend services will add it to the friend’s comment section on their post.
 - Non-functional Aspects:
    - Web Server receives new post
    - Node.js backend receives comment information and posts it
    - Node.js backend uses database interface to update comment table with new post 
 
-### 11. Member Invites a non-member to *Members Only* so that they can enjoy *Members Only* with them
+### 11. Member Invites a Non-Member to *Members Only*
 
 Alex navigates to the “Invite New Member” button on their profile page. On this page, Alex will fill in new members email address. Webserver will receive this information and pass it to the backend. Backend will save new members email to database. Backend will tell email system to send a new invitation email. New invitation email will be sent to new member. System will start a timer for 4 days.
 - Non-functional Aspects
