@@ -21,6 +21,14 @@ Administrators are our next enhanced Member. First and foremost, we have admins 
 <details>
 <summary>New Members</summary>
  
+### New Member Accepts Offer
+
+Alex will gain points. Webserver will receive this information and send it to the backend. Backend will add that many points to Alex’s point system.
+- Non-functional Aspects:
+   - Web Server receives new post
+   - Node.js backend receives post information and posts it
+   - Node.js backend uses database interface to update post table with new post 
+ 
 ### New Member Creates Account
 
 Josh gets sent a link from a friend to join Members Only. Naturally, Josh is very excited and is eager to join the site. Josh finds the link in an email from Members Only and selects it. He is now brought to a Members Only webpage that asks him to confirm if he wants to join Members Only. Josh will of course select yes on joining Members Only. After accepting, he will be brought to a Sign Up page on the website. Josh will have to fill out a form will personal information such as First Name, Last Name, Street Address, City/Town, Zip Code, Country (U.S. only to start), Email Address, and a Password. Josh will then select a box which says that he accepts the Terms and Conditions of Members Only. Finally, Josh will submit this form, and he will be sent a confirmation email about joining Members Only. Josh will go to this email, select the account confirmation link, effectively finalizing the creation of his account and bringing him to his own Members Only account. Afterwards, Josh will be sent a credit card charge that he will have to verify on the site to confirm that he says he is. 
@@ -116,14 +124,6 @@ Alex navigates to the “Invite New Member” button on their profile page. On t
    - Web Server receives request to send a new invitation link
    - Node.js backend processes request and sends an automated email with link
    - Node.js backend keeps track of how long invitation has been out for
-
-### New Member Accepts Offer
-
-Alex will gain points. Webserver will receive this information and send it to the backend. Backend will add that many points to Alex’s point system.
-- Non-functional Aspects:
-   - Web Server receives new post
-   - Node.js backend receives post information and posts it
-   - Node.js backend uses database interface to update post table with new post 
 
 ### Member posts photo to profile.
 
