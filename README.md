@@ -6,11 +6,15 @@ Members Only is a social media site where users, known as Members, can post stat
 
 ## Members
 
-Members are our users. They are the the traffick, the data, and most importantly; the revenue. Members are able to access the site via a login page that brings them to their feed, where by default they are connected with every other Member on the site. This allows them to see the statuses, photos, and anything other form of output from every other Member on the site. Otherwise, Members have the option to privatize their profile so that they can only be seen by their followers (other Members who either invited this Member or were invited by this Member). But the most important question is, what do Members bring? The answer is: data. And heaps of it. We plan to store all of Members posts, comments, photos, filtered photos, the time they spend on certain areas of the site, what statuses and links draw their attention, and anything else imaginable. All of this knowledge will allow us to carefully curate advertisements for each individual user as to draw the most potential revenue to the site. Without Members, Members Only doesn't exist. 
+Members are our users. They are the the traffick, the data, and most importantly; the revenue. Members are able to access the site via a login page that brings them to their feed, where by default they are connected with every other Member on the site. This allows them to see the statuses, photos, and anything other form of output from every other Member on the site. Otherwise, Members have the option to privatize their profile so that they can only be seen by their followers (other Members who either invited this Member or were invited by this Member). But the most important question is, what do Members bring? The answer is: data. And heaps of it. We plan to store all of Members posts, comments, photos, filtered photos, the time they spend on certain areas of the site, what statuses and links draw their attention, and anything else imaginable. All of this knowledge will allow us to carefully curate advertisements for each individual user as to draw the most potential revenue to the site. And for all their actions on the site, we reward Members with points. A simple mechanism that will keep Members wanting to keep coming back to the site. They post a photo and filter it? Have some points. They post a status that receives a lot of comments? Have some points. A Member successfully gets a new Member to join the site? Have some points. And with these points, Members can choose to use them to invite new Members to the site, expanding their circle of friends within the gated community. This allows Members to create subcommunities within the overarching Members Only site, which will keep Members entranced with the website. Without Members, Members Only doesn't exist. 
 
 ## Idols
 
-Idols are our bedrock. 
+Idols are our bedrock from which we build the site. We will pay Idols to be some of the first enhanced Members on the site. Enhanced meaning that they have all the functionality of a normal Member, but they also have unlimited points and invitation codes which they can use to send invitations to Members Only to all of their fans. In this sense, Idols are the first step in attracting large waves of Members to join the site and get it off the ground. Once on the site, Members can see all of their idols updates, effectively joining the community of the Idols. 
+
+## Administrators
+
+Administrators are our next enhanced Member. First and foremost, we have admins to keep the peace. Admins will manually review any flagged content to make sure that no illicit material makes it on to Members Only. Although Members Only is a gated community, we do not want to establish a reputation for allowing unlawful material on our site. Furthermore, admins will solve disputes between Members, effectively making sure that our Members are happy on the site. Finally, admins will be able to insert sponsored content and different filters into other Members photos as to please advertisers of the site. Additionally, administrators will be able to add links, comments, and other materials into Members posts for advertising and any other purposes of the site. And of course, the original poster will not be able to see the changes that were made to their posts, but everyone else on the site will be able to. 
 
 
 
@@ -155,26 +159,27 @@ Phil wants to report another member on Members Only for an offensive action. Phi
 <summary>System</summary>
 
 ### The system deducts a point from the member  
-
-The backend receives a request from the frontend. Then, it sent a request to the credit card company using credit card software(Stripe.js).
-If the request is denied, the system freezes the member’s account and changes the permission of the member in a database. On the other case, if the request is successful, the database finds the matched member and takes a point off. Then the system sends updated point information to the frontend. The frontend updates the point information in local storage(redux) and Alex will recognize the changes from the browser.
+The backend receives a request from the frontend. The backend sent a request to the credit card company using a credit card software.
+If the credit card is denied, the system freezes the member’s account and changes the permission of the member in a database. 
+If the request is successful, the database finds the matched member and takes a point off. Then the system sends updated point information to the frontend. The frontend updates the point information in a local storage and Alex will recoginize the changes.
 
 ### The system awards a point from a member  
-
-Alex’s invitation gets accepted, or he makes positive actions. The backend receives a request from frontend or Sendgrid(Email System). Then, the database finds the matched member's information in the database and updates the matched member's information. The system sends updated point information to the frontend. The system updates the point information in local storage and Alex will recognize the changes. 
+Alex’s invitation gets accepted or he makes positive actions. The backend receives a request. The database finds the matched member information in a database and updates the matched member's information. The system sends updated point information to the frontend. The system updates the point information in a local storage and Alex will recognize the changes. 
 
 ### The system gets a login request from a frontend 
-A frontend sends a login request to a backend with the user's login information such as email address, current IP address, and password. The backend stores a member's current IP address into the database. if backend confirms the information given is matched with one of the user data in the database. It will send tokens and matched user information to the frontend. Otherwise, the backend server will throw an error message to the frontend so that the user can notice the rror. 
+A frontend sends a login request to a backend. The backend gets a request that contains user information. The backend stores a member's current IP address into the database. The backend confirms whether the information given is matched with one of the user data in the database. The backend sends tokens and matched user information to the frontend. 
 
 ### The system gets a logout request from a frontend   
- Alex clicks a logout button in a frontend. The frontend detects when the logout button is clicked. The front-end sends an Alex’s singed out time to a backend, and it stores Alex's logout time. After logout time is stored in the database, the frontend destroys the session data in local storage. The frontend redirects Alex to a landing page. 
+ Alex clicks a logout button in a frontend. The frontend detects when the logout button is clicked. The frontend sends a Alex’s singed out time to a backend. The backend stores Alex's logout time. The frontend destroys the session data in a local storage. The frontend redirects Alex to a landing page. 
 
 ### The system gets a registration request from a frontend 
-A potential member(Bob) fills out a registration form and clicks the register button. The backend gets a request that contains a potential user’s information containing credit information. If the credit card information already exists, the backend sends an error to the frontend,  and bob notices the error. If the credit card information does not exist in the database, the system checks the given credit card information is valid using credit card software. If the data is accurate, the system stores new user information into the database. After that, the frontend redirects Bob to a login page. 
+A potential member(Bob) fills out a registration form and clicks the register button. The backend gets a request that contains a potential user’s information 
+If the credit card information already exists, the backend sends an error to the frontend  and bob checks the error . If the credit card information does not exist in the database, The system checks the given credit card information is valid using credit card software. If the data is valid, the system stores new user information into the database. The frontend redirects Bob to a login page. 
+If the data is NOT valid, the backend sends an error to the frontend and Bob checks the error. 
 
 ### The system collects a member’s interest
-The frontend detects an item being clicked when a member clicks a specific post or recognizes an item(content) on the current screen (if the member stays longer than a particular second at the same page without scrolling down or going out to other pages). Then, the front-end sends the item(content) information to the backend. The backend receives the data and stores them in the database.
+Alex performs specific expected actions. The frontend detects an item being clicked when a member clicks a specific post or recognizes an item(content) on the current screen (if a member stays longer than a particular second at the same page without scrolling down or going out to other pages). The frontend sends the item(content) information to the backend. The backend receives the data and stores them in the database.
 
 ### A system converts the original URL to the shortened URL 
-The front-end sends a request to the backend with original URL information. The backend gets the request and uses a hash function to generate a shortened URL. The backend saves the shortened URL into the database and sends the shortened URL to the frontend. In the case of the backend can't perform shortening, it will use the original URL instead. 
+The frontend sends the request to a backend. Then the frontend sends a request to the backend with original URL information. The backend gets the request and uses a hash function to generate a shortened URL. The system saves the shortened URL into the database. The system sends the shortened URL to the frontend. In the case of the system can't perform shortening, it will use the original URL. 
 </details>
