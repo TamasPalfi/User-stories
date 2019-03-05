@@ -251,7 +251,7 @@ Tony, an idol, wants to contribute to the web site’s overall member base count
    - Node.js backend keeps track of how long invitation has been out for
 
 ### 30. Idol Visibility
-Idols are the *faces* of *Members Only*, and as such need to be highly visible. Thus, Idols do not have a visibility toggle option like Members. we want it to be the case that all members should be allowed to see their profiles.
+Idols are the **faces** of *Members Only*, and as such need to be highly visible. Thus, Idols do not have a visibility toggle option like Members. We want it to be the case that all Members should be allowed to see their profiles.
 
 </details>
 
