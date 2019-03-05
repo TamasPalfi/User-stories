@@ -91,47 +91,42 @@ Alex does not enter the correct charge amount before expiration (4 days), and is
    - Node.js receives input and validates it is the same as amount charged
 
 ### 9. Member Posts a Status Update on Personal Profile
-Alex will select an option on their profile page that reads “create new post”. Alex will type URL, and can add any additional text to the post. tinyURL generator will shorten the URL given. Alex will hit “post”. The webserver will receive the request send it to the backend. Backend will process the request and post Alex link to their profile feed. Backend services will send the link to the database to store it as something Alex is interested in for potential future advertisement reasons.
+Alex will select an option on their profile page that reads "Create New Post". He will then be met with a textbox popup where he may enter text and/or hyperlinks. If entering a hyperlink, Alex will select the "URL Shortener" button, where he will proceed to enter the full URL. Once finished editing his status update, Alex will select "Post". The URL will appear in shortened form upon posting his status update.
+
 - Non-Functional Aspects:
    - Web Server receives new post
    - Node.js backend receives post information and posts it
    - Node.js backend uses database interface to update post table with new post 
 
 ### 10. Member Leaves Comment on Other Member's Status
-Alex will see their friend’s status on their profile feed. Alex will select the “Comment” button that appears on the bottom of their friend’s post. The Webserver will get the request and pop up a text box overlay on the website. Alex will leave a comment, then hit “Post”. The Webserver will receive the request and send it to the backend services. Backend services will add it to the friend’s comment section on their post.
+Alex sees their friend’s status on their profile feed. Alex will select the "Comment" button that appears on the bottom of their friend’s post. Alex will be met with a textbox popup, in which he will type his comment. Once finished, he will select the "Post" button. 
 - Non-functional Aspects:
    - Web Server receives new post
    - Node.js backend receives comment information and posts it
    - Node.js backend uses database interface to update comment table with new post 
 
 ### 11. Member Invites a Non-Member to *Members Only*
-
-Alex navigates to the “Invite New Member” button on their profile page. On this page, Alex will fill in new members email address. Webserver will receive this information and pass it to the backend. Backend will save new members email to database. Backend will tell email system to send a new invitation email. New invitation email will be sent to new member. System will start a timer for 4 days.
+Alex navigates to the “Invite New Member” button on the *Members Only* homepage to invite his friend Marisa. He will be redirected to a new webpage with a form, with required fields of potential New Member's valid email address, name, and optional dropdown menu of "How You Know This Person". He will then fill in the required fields with Marisa's details, and select "Submit". 1000 points are removed from Alex's account. 
 - Non-functional Aspects
    - Web Server receives request to send a new invitation link
    - Node.js backend processes request and sends an automated email with link
    - Node.js backend keeps track of how long invitation has been out for
-
-### 12. New Member Accepts Offer
-
-Alex will gain points. Webserver will receive this information and send it to the backend. Backend will add that many points to Alex’s point system.
-- Non-functional Aspects:
-   - Web Server receives new post
-   - Node.js backend receives post information and posts it
-   - Node.js backend uses database interface to update post table with new post 
+   
+#### 11a. Potential New Member Accepts Invitation
+Marisa receives an email from *Members Only* to join. She selects the hyperlink in the email, and is brought to a webpage asking to confirm joing *Members Only*. She selects "Yes". For signup details [SEE #1]. Alex receives 50 points. 
+#### 11b. Potential New Member Lets Invitation Link Expire
+Marisa receives an email from *Members Only* to join. She does not see the email, or does not want to join *Members Only*. After 4 days, the link expires. Alex loses an additional 100 points. 
 
 ### 13. Member Posts Photo to Profile
-
-Alex will choose “Post Photo” on their profile feed. Alex can navigate their device for the photo they wish to submit. Alex can then add any additional text to the post that they wish. Alex will then hit submit. The Web Server will receive the request and send it to backend services. Backend services will process and post the request. Backend will save image to database. Admins can use saved image for their own purposes.
+From their profile page, Alex selects "Post Photo". Alex is met with a popup window, where he navigates to the photo he wishes to post. He confirms the photo, and is able to enter additional text to the post within a textbox. Once complete, Alex selects "Post".
 - Non-functional Aspects:
    - Web Server receives new post and photo
    - Node.js backend receives post information and posts it
    - Node.js backend uses database interface to update post table with new post
    - Node.js backend uses database interface to update photo table with new photo
 
-### 14. Member Edits Photo 
-
-Alex will go through the post a photo process, except immediately after he chooses his photo he will be given the option to apply a filter. Alex will scroll through various premade filters available on *Members Only*. Alex will choose a filter that will be applied to their photo. The post photo process then continues from here.
+### 14. Member Edits Photo Before Posting
+Alex will go through the "Member Posts Photo to Profile" process [SEE # 13], but immediately after choosing his photo he will instead select "Filter Photo". Alex will now be able to scroll through various premade filters available on *Members Only*. Alex will choose a filter that will be applied to their photo. 
 - Non-functional Aspects:
    - Web Server receives new post and photo
    - Node.js backend receives post information and posts it
@@ -139,9 +134,8 @@ Alex will go through the post a photo process, except immediately after he choos
    - Node.js backend uses database interface to update photo table with new photo
    - Node.js backend uses database interface to update filtered photo table with new photo
 
-#### 14a. Member Removes Filter
-
-Alex navigates to his profile page and selects the photo he wishes to remove the filter on. Alex chooses “options”. Alex then chooses to remove filters. The filters will then be removed from the photo. Alex will then be prompted to confirm their changes. Alex will select “Confirm”. Request will be sent to the web server. Web server will send it to backend. Backend services will replace that photo with the originally posted photo.
+#### 14. Member Removes Photo Filter
+Alex navigates to his profile page and selects the photo he wishes to remove the filter on. Alex selects “Photo Options”. Alex then selects "Remove Filter". The filter is then removed from the photo. Alex is then prompted to confirm their changes. Alex will select “Confirm”.
 - Non-functional Aspects:
    - Web Server receives new post and photo
    - Node.js backend receives post information and posts it
@@ -150,8 +144,7 @@ Alex navigates to his profile page and selects the photo he wishes to remove the
    - Node.js backend uses database interface to update filtered photo table with new photo
 
 
-#### 14b. Member Adds Sponsored Content to Photo
-
+#### 14. Member Adds Sponsored Content to Photo
 Alex will follow the posting photos process. Alex will then select “Add Content”. Alex can choose any of the items and place them anywhere in their photo using a drag and drop method. Alex will choose to submit their altered photo. The Web Server will receive the request and send it to backend services. Backend services will process and post the request. Backend will save image to database. Admins can access image and add/delete content as they please.
 - Non-functional Aspects:
    - Web Server receives new post and photo
