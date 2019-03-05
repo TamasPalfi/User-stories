@@ -115,7 +115,7 @@ Johnson wants to login in to Members Only and check his feed. To do this, Johnso
 
 Johnson wants to login to Members Only, but he is stuck at the login form on the homepage of the site because he has forgotten the correct password associated with his account. Johnson will then select a link that says, “Forgot Password”. This will redirect him to a different form on the Members Only site where he will fill out his email and several other details associated with his account such as his name. Johnson will then be sent an email that sends him a new temporary password to login to his account. Johnson can then reset his password once he logs back into his account and accesses his settings. 
 
-### MEMBER FORGOT EMAIL / INPUTS INVALID EMAIL
+### Member Forgets Email or Inputs Invalid Email
 
 Johnson directs himself to the Members Only homepage and tries to login to his account. However, Johnson has somehow forgotten the email associated with his Members Only account. After entering his information, Johnson will click submit. The system will receive the email and attempt to verify who Johnson is, however because it is the incorrect email Johnson will be denied access to Members Only until he can recall the correct email address associated with his account. 
 
