@@ -17,7 +17,7 @@
 
 - Since we already decided to use JavaScript(React.js) for frontend, it’s a no-brainer to pick Node.js(Javascript).
 
-- Google JavaScript engine. Translation: fast and scalable web apps in a result.
+- Node.js use V8 engines by Google. Fast and scalable web apps in a result.
 
 - Thanks to this popularity, a vicious cycle is set up: your favorite API might only offer an official Node.js library, and other languages are not even considered, left for unofficial packages 
 
