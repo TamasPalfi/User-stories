@@ -257,29 +257,30 @@ Idols are the **faces** of *Members Only*, and as such need to be highly visible
 
 <details>
 <summary>System</summary>
- 
+
 ### 31. System Deducts Points From Member  
+Alex, a Member, invites a potential New Member (or invitation failed, etc.). The backend receives request, and the database finds the matched Member information in database and updates the matched member's information. The system sends updated point information to the frontend. The system updates the point information in local storage and Alex will see the changes immediately. 
+
+### 32. System Awards Points To Member  
+Alex's invitation is accepted or he makes positive actions (posts photo, comment). The backend receives request. The database finds the matched Member information in database and updates the matched member's information. The system sends updated point information to the frontend. The system updates the point information in local storage and Alex will see the changes immediately. 
+
+### 33. System Receives Login Request From Frontend 
+Frontend sends a Login request to a backend. The backend receives a request that contains user information. The backend stores a Member's current IP address into the database. Backend confirms whether the information given is matched with user data in database. The backend sends tokens and matched user information to the frontend. 
+
+### 34. System Receives Logout Request From Frontend   
+Alex selects the "Logout" button from frontend. Frontend detects when the “Logout” button is selected. The frontend sends Alex’s sign out time to backend. Backend stores Alex's logout time. Frontend removes the session data in local storage. The frontend redirects Alex to a landing page. 
+
+### 35. System Receives Registration Request From Frontend 
+A potential New Member (Bob) fills out a registration form and selects the "Register" button. The backend receives a request that contains potential New Member’s information. If the credit card information already exists, the backend sends an error to the frontend  and Bob must fix the error. If the credit card information does not exist in the database, The system checks that the given credit card information is valid using credit card software. If the data is valid, the system stores New Member user information into the database. The frontend redirects Bob to a Login page. If the data is **not** valid, the backend sends an error to the frontend and Bob must fix the error. 
+
+### 36. System Retains Member's Actions (Interests)
+Alex, a Member, performs specific expected actions. The frontend detects an item being selected when a Member selects a specific post or other content on the current screen (if a Member stays longer at a specific page of *Members Only*). The frontend sends this information to the backend. The backend receives the data and stores it in the database.
+
+### 37. System Converts URL to Shortened URL 
+The frontend sends the request to a backend. Frontend sends a request to the backend with original URL information. The backend receives the request and uses a hash function to generate a shortened URL. The System saves the shortened URL into the database. The System sends the shortened URL to the frontend. In the case of the system cannot perform shortening, it will use the original URL. 
+
+### PLEASE FIX 
 The backend receives a request from the frontend. The backend sent a request to the credit card company using a credit card software.
 If the credit card is denied, the system freezes the member’s account and changes the permission of the member in a database. 
 If the request is successful, the database finds the matched member and takes a point off. Then the system sends updated point information to the frontend. The frontend updates the point information in a local storage and Alex will recoginize the changes.
-
-### 32. System Awards Points To Member  
-Alex’s invitation is accepted or he makes positive actions. The backend receives a request. The database finds the matched member information in a database and updates the matched member's information. The system sends updated point information to the frontend. The system updates the point information in a local storage and Alex will recognize the changes. 
-
-### 33. System Receives Login Request From Frontend 
-A frontend sends a login request to a backend. The backend gets a request that contains user information. The backend stores a member's current IP address into the database. The backend confirms whether the information given is matched with one of the user data in the database. The backend sends tokens and matched user information to the frontend. 
-
-### 34. System Receives Logout Request From Frontend   
- Alex selects the “Logout” button from frontend. Frontend detects when the “Logout” button is selected. The frontend sends Alex’s sign out time to backend. Backend stores Alex's logout time. Frontend removes the session data in local storage. The frontend redirects Alex to a landing page. 
-
-### 35. System Receives Registration Request From Frontend 
-A potential member(Bob) fills out a registration form and selects the “Register” button. The backend receives a request that contains a potential New Member’s information.
-If the credit card information already exists, the backend sends an error to the frontend  and bob checks the error . If the credit card information does not exist in the database, The system checks the given credit card information is valid using credit card software. If the data is valid, the system stores new user information into the database. The frontend redirects Bob to a login page. 
-If the data is NOT valid, the backend sends an error to the frontend and Bob checks the error. 
-
-### 36. System Retains Member's Actions (Interests)
-Alex performs specific expected actions. The frontend detects an item being selected when a member selects a specific post or recognizes an item(content) on the current screen (if a member stays longer than a particular second at the same page without scrolling down or going out to other pages). The frontend sends the item(content) information to the backend. The backend receives the data and stores them in the database.
-
-### 37. System Converts URL to Shortened URL 
-The frontend sends the request to a backend. Then the frontend sends a request to the backend with original URL information. The backend receives the request and uses a hash function to generate a shortened URL. The system saves the shortened URL into the database. The system sends the shortened URL to the frontend. In the case of the system can't perform shortening, it will use the original URL. 
 </details>
