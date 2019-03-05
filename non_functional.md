@@ -22,8 +22,9 @@
 
 ### Credit Card Software 
 ***Stripe.js*** 
-- Transparent pricing. 
-- Simple integration with node.js.
+- In keeping with their principle of simplicity and convenience, pricing is 2.9% + $.30 per successful transaction.
+-  There are extremely readable documentations and code samples to do efficient custom integration. 
+- If developers want to test the application before making it live, they simply hit the “test” button. In comparison, PayPal makes developers set up a sandbox account and log in and out of different vendor and seller accounts.
 
 ### Automated Email 
 ***Sendgrid***
