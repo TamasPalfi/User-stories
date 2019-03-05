@@ -1,6 +1,26 @@
 
 <details>
 <summary>New Members</summary>
+ 
+### New Member Creates Account
+
+Josh gets sent a link from a friend to join Members Only. Naturally, Josh is very excited and is eager to join the site. Josh finds the link in an email from Members Only and selects it. He is now brought to a Members Only webpage that asks him to confirm if he wants to join Members Only. Josh will of course select yes on joining Members Only. After accepting, he will be brought to a Sign Up page on the website. Josh will have to fill out a form will personal information such as First Name, Last Name, Street Address, City/Town, Zip Code, Country (U.S. only to start), Email Address, and a Password. Josh will then select a box which says that he accepts the Terms and Conditions of Members Only. Finally, Josh will submit this form, and he will be sent a confirmation email about joining Members Only. Josh will go to this email, select the account confirmation link, effectively finalizing the creation of his account and bringing him to his own Members Only account. Afterwards, Josh will be sent a credit card charge that he will have to verify on the site to confirm that he says he is. 
+
+### Signing Up With a Code
+
+Brianna manages to get her hands on an invitation code to Members Only from one of her favorite idols. To use this, Brianna navigates to the Members Only site and is brought to the login page. Since Brianna doesn’t currently have an account, she will have to choose the option to sign up with a code. After clicking this, Brianna will be brought to a new web page where she will be asked to enter her code. Brianna will enter the code and then hit a submit button. Afterwards, she will be brought through the same account creation process as described previously. 
+
+### New Member Invitation Link Expires
+
+Liam receives an invitation link to Members Only. However, he is very busy and forgets to about it for more than 4 days. Because of this, the email link will expire, and he will lose this opportunity to join the site. To be able to join again he will have to be sent another invitation link. 
+
+### New Member Confirms Credit Card Charges
+After successfully creating her account, Catherine will have to enter her credit card details so that we can confirm she is who she says she is. Catherine will receive an email to confirm her payment details. Catherine will select this link which will bring her to a form on the Members Only site where she will enter a valid 16-digit credit card number, the name the card is under, the expiration date of the card, and the 3 digit CVV associated with the credit. Catherine will then choose to SUBMIT this form. She will then be brought back to her Members Only page. 
+
+### New Member Confirms Credit Card Charge
+
+After Catherine successfully enters her credit card information, she will be charged a random amount between $0.20 and $0.45 that she will need to confirm on the Members Only site to verify she is who she says she is. Catherine will receive an email shortly after creating her account that notifies her that she has been charged for the first time. Catherine will then navigate to her online banking and check for a charge from Members Only. After finding the charge, Catherine will remember the amount and navigate back to notification email from Members Only. Catherine will select the hyperlink in the email that brings her to a form with an entry field for the value of the charge. Catherine will then enter the charge amount and select SUBMIT. If she submits the correct amount then she is brought back to her Members Only page as a verified Member. Else, she will be asked to resubmit the amount she was charged until she submits the right amount. 
+
 
 
 </details>
@@ -8,7 +28,7 @@
 
 <details>
 <summary>Members</summary>
-
+  
 ### Member updates credit card information
 
 Alex will login to their profile. Alex will navigate to their settings page on their personal profile. Member will choose change credit card button. System will prompt user with text boxes to enter new credit card information. User will enter name of card. User will enter card number. User will enter expiration date. User will enter CVV. Alex will hit the submit form button. Credit card will then be verified to make sure it is valid. System will send this to the database to update the current credit card information with this information. Credit card information updates.
@@ -116,5 +136,28 @@ Phil wants to report another member on Members Only for an offensive action. Phi
 <details>
 <summary>System</summary>
 
+### The system deducts a point from the member  
+The backend receives a request from the frontend. The backend sent a request to the credit card company using a credit card software.
+If the credit card is denied, the system freezes the member’s account and changes the permission of the member in a database. 
+If the request is successful, the database finds the matched member and takes a point off. Then the system sends updated point information to the frontend. The frontend updates the point information in a local storage and Alex will recoginize the changes.
 
+### The system awards a point from a member  
+Alex’s invitation gets accepted or he makes positive actions. The backend receives a request. The database finds the matched member information in a database and updates the matched member's information. The system sends updated point information to the frontend. The system updates the point information in a local storage and Alex will recognize the changes. 
+
+### The system gets a login request from a frontend 
+A frontend sends a login request to a backend. The backend gets a request that contains user information. The backend stores a member's current IP address into the database. The backend confirms whether the information given is matched with one of the user data in the database. The backend sends tokens and matched user information to the frontend. 
+
+### The system gets a logout request from a frontend   
+ Alex clicks a logout button in a frontend. The frontend detects when the logout button is clicked. The frontend sends a Alex’s singed out time to a backend. The backend stores Alex's logout time. The frontend destroys the session data in a local storage. The frontend redirects Alex to a landing page. 
+
+### The system gets a registration request from a frontend 
+A potential member(Bob) fills out a registration form and clicks the register button. The backend gets a request that contains a potential user’s information 
+If the credit card information already exists, the backend sends an error to the frontend  and bob checks the error . If the credit card information does not exist in the database, The system checks the given credit card information is valid using credit card software. If the data is valid, the system stores new user information into the database. The frontend redirects Bob to a login page. 
+If the data is NOT valid, the backend sends an error to the frontend and Bob checks the error. 
+
+### The system collects a member’s interest
+Alex performs specific expected actions. The frontend detects an item being clicked when a member clicks a specific post or recognizes an item(content) on the current screen (if a member stays longer than a particular second at the same page without scrolling down or going out to other pages). The frontend sends the item(content) information to the backend. The backend receives the data and stores them in the database.
+
+### A system converts the original URL to the shortened URL 
+The frontend sends the request to a backend. Then the frontend sends a request to the backend with original URL information. The backend gets the request and uses a hash function to generate a shortened URL. The system saves the shortened URL into the database. The system sends the shortened URL to the frontend. In the case of the system can't perform shortening, it will use the original URL. 
 </details>
