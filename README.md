@@ -1,21 +1,25 @@
 
 <details>
 <summary>New Members</summary>
-## New Member Creates Account
+### New Member Creates Account
+
 Josh gets sent a link from a friend to join Members Only. Naturally, Josh is very excited and is eager to join the site. Josh finds the link in an email from Members Only and selects it. He is now brought to a Members Only webpage that asks him to confirm if he wants to join Members Only. Josh will of course select yes on joining Members Only. After accepting, he will be brought to a Sign Up page on the website. Josh will have to fill out a form will personal information such as First Name, Last Name, Street Address, City/Town, Zip Code, Country (U.S. only to start), Email Address, and a Password. Josh will then select a box which says that he accepts the Terms and Conditions of Members Only. Finally, Josh will submit this form, and he will be sent a confirmation email about joining Members Only. Josh will go to this email, select the account confirmation link, effectively finalizing the creation of his account and bringing him to his own Members Only account. Afterwards, Josh will be sent a credit card charge that he will have to verify on the site to confirm that he says he is. 
- <br>
+
 ### Signing Up With a Code
+
 Brianna manages to get her hands on an invitation code to Members Only from one of her favorite idols. To use this, Brianna navigates to the Members Only site and is brought to the login page. Since Brianna doesn’t currently have an account, she will have to choose the option to sign up with a code. After clicking this, Brianna will be brought to a new web page where she will be asked to enter her code. Brianna will enter the code and then hit a submit button. Afterwards, she will be brought through the same account creation process as described previously. 
- <br>
-## New Member Invitation Link Expires
+
+### New Member Invitation Link Expires
+
 Liam receives an invitation link to Members Only. However, he is very busy and forgets to about it for more than 4 days. Because of this, the email link will expire, and he will lose this opportunity to join the site. To be able to join again he will have to be sent another invitation link. 
- <br>
-## New Member Confirms Credit Card Charges
+
+### New Member Confirms Credit Card Charges
 After successfully creating her account, Catherine will have to enter her credit card details so that we can confirm she is who she says she is. Catherine will receive an email to confirm her payment details. Catherine will select this link which will bring her to a form on the Members Only site where she will enter a valid 16-digit credit card number, the name the card is under, the expiration date of the card, and the 3 digit CVV associated with the credit. Catherine will then choose to SUBMIT this form. She will then be brought back to her Members Only page. 
- <br>
-## New Member Confirms Credit Card Charge
+
+### New Member Confirms Credit Card Charge
+
 After Catherine successfully enters her credit card information, she will be charged a random amount between $0.20 and $0.45 that she will need to confirm on the Members Only site to verify she is who she says she is. Catherine will receive an email shortly after creating her account that notifies her that she has been charged for the first time. Catherine will then navigate to her online banking and check for a charge from Members Only. After finding the charge, Catherine will remember the amount and navigate back to notification email from Members Only. Catherine will select the hyperlink in the email that brings her to a form with an entry field for the value of the charge. Catherine will then enter the charge amount and select SUBMIT. If she submits the correct amount then she is brought back to her Members Only page as a verified Member. Else, she will be asked to resubmit the amount she was charged until she submits the right amount. 
- <br>
+
 
 
 </details>
