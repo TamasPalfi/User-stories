@@ -58,7 +58,7 @@ Alex navigates to the “Invite New Member” button on their profile page. On t
 
 Alex will gain points. Webserver will receive this information and send it to the backend. Backend will add that many points to Alex’s point system.
 
-### 11b. Potential New Member Declines Offer / Offer Expires
+#### 11b. Potential New Member Declines Offer / Offer Expires
 
 Alex loses points. Webserver will receive this information and send it to the backend. Backend will subtract that many points from Alex’s point system.
 
