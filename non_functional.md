@@ -2,13 +2,15 @@
 
 ### FrontEnd 
 ***React.js***   
+- React is very a simple and lightweight library that only deals with the view layer. It is not a beast like other MV* frameworks such as Angular or Ember. Since, one team is going to take care of the frontend, it's good for them to only focus on view layer. 
 
-- Fast learning curve.
-- Reusable components.  
-- Fast render with Virtual DOM.
-- Clean abstraction.
-- Flux and redux. There is only one single object where you keep all the application data.  
-- Great developer tools.
+- React provides a component based structure. As a result:
+    - your app has consistent look and feel.
+    - code re-use makes it easier to maintain and grow your codebase.
+    - it is easier to develop your app.
+
+- Updating DOM is usually the bottleneck when it comes to the web performance. React efficiently compares the previous and current states of the virtual DOM and calculates the best way (minimum amount of updates needed) to apply these changes. This is the main reason behind React’s high performance.
+
 
 ### Backend 
 ***Node.js***
