@@ -3,15 +3,12 @@
 <summary>New Members</summary>
  
 ### 1. New Member Creates Account
-
-Josh gets sent a link from a friend to join *Members Only*. Naturally, Josh is very excited and is eager to join the site. Josh finds the link in an email from Members Only and selects it. He is now brought to a *Members Only* webpage that asks him to confirm if he wants to join *Members Only*. Josh will of course select yes on joining *Members Only*. After accepting, he will be brought to a Sign Up page on the website. Josh will have to fill out a form will personal information such as First Name, Last Name, Street Address, City/Town, Zip Code, Country (U.S. only to start), Email Address, and a Password. Josh will then select a box which says that he accepts the Terms and Conditions of *Members Only*. Finally, Josh will submit this form, and he will be sent a confirmation email about joining *Members Only*. Josh will go to this email, select the account confirmation link, effectively finalizing the creation of his account and bringing him to his own *Members Only* account. Afterwards, Josh will be sent a credit card charge that he will have to verify on the site to confirm that he says he is. 
+Josh receives a link from a friend to join *Members Only*. Naturally, Josh is very excited and is eager to join the site. Josh finds the link in an email from Members Only and selects it. He is now brought to a *Members Only* webpage that asks him to confirm if he wants to join *Members Only*. Josh will of course select yes on joining *Members Only*. After accepting, he will be brought to a Sign Up page on the website. Josh will have to fill out a form will personal information such as First Name, Last Name, Street Address, City/Town, Zip Code, Country (U.S. only to start), Email Address, and a Password. Josh will then select a box which says that he accepts the Terms and Conditions of *Members Only*. Finally, Josh will submit this form, and he will be sent a confirmation email about joining *Members Only*. Josh will go to this email, select the account confirmation link, effectively finalizing the creation of his account and bringing him to his own *Members Only* account. Afterwards, Josh will be sent a credit card charge that he will have to verify on the site to confirm that he says he is. 
 
 ### 2. New Member Signs Up With Code
-
 Brianna manages to get her hands on an invitation code to *Members Only* from one of her favorite idols. To use this, Brianna navigates to the *Members Only* site and is brought to the login page. Since Brianna doesn’t currently have an account, she will have to choose the option to sign up with a code. After selecting this, Brianna will be brought to a new web page where she will be asked to enter her code. Brianna will enter the code and then hit a submit button. Afterwards, she will be brought through the same account creation process as described previously. 
 
 ### 3. New Member Invitation Link Expires
-
 Liam receives an invitation link to *Members Only*. However, he is very busy and 
 to about it for more than 4 days. Because of this, the link will expire, and he will lose this opportunity to join the site. To be able to join again he will have to be sent another invitation link. 
 
@@ -19,10 +16,7 @@ to about it for more than 4 days. Because of this, the link will expire, and he 
 After successfully creating her account, Catherine will have to enter her credit card details so that we can confirm she is who she says she is. Catherine will receive an email to confirm her payment details. Catherine will select this link which will bring her to a form on the *Members Only* site where she will enter a valid 16-digit credit card number, the name the card is under, the expiration date of the card, and the 3 digit CVV associated with the credit. Catherine will then choose to SUBMIT this form. She will then be brought back to her *Members Only* page. 
 
 ### 5. New Member Confirms Credit Card Charge
-
 After Catherine successfully enters her credit card information, she will be charged a random amount between $0.20 and $0.45 that she will need to confirm on the *Members Only* site to verify she is who she says she is. Catherine will receive an email shortly after creating her account that notifies her that she has been charged for the first time. Catherine will then navigate to her online banking and check for a charge from *Members Only*. After finding the charge, Catherine will remember the amount and navigate back to notification email from *Members Only*. Catherine will select the hyperlink in the email that brings her to a form with an entry field for the value of the charge. Catherine will then enter the charge amount and select SUBMIT. If she submits the correct amount then she is brought back to her *Members Only* page as a verified Member. Else, she will be asked to resubmit the amount she was charged until she submits the right amount. 
-
-
 
 </details>
 
@@ -31,59 +25,45 @@ After Catherine successfully enters her credit card information, she will be cha
 <summary>Members</summary>
   
 ### 6. Member Updates Credit Card Information
-
 Alex will login to their profile. Alex will navigate to their settings page on their personal profile. Member will choose change credit card button. System will prompt user with text boxes to enter new credit card information. User will enter name of card. User will enter card number. User will enter expiration date. User will enter CVV. Alex will hit the submit form button. Credit card will then be verified to make sure it is valid. System will send this to the database to update the current credit card information with this information. Credit card information updates.
 
 ### 7. Member Confirms Tri-Monthly Credit Card Charge
-
 System will tell the credit card software it is time to charge Alex. Credit card system will charge member a random amount between $0.20 and $0.40. System will send automated email at specified time period telling member to validate the charge made to their account. Email will include a link that will direct the user to the page to enter the amount charged. System will start a timer for 3 days. Alex will login to their personal bank account and check for the charge from *Members Only*. Alex will select the link provided in email. Alex will be redirected to the webpage with a form where they can enter the amount they were charged by the system. Alex will fill in the text box with that amount. Alex will hit the “Submit form” button. Webserver will receive this information and back end services will process it. System will compare this amount to the amount that was charged. If right, member will be directed back to the *Members Only* homepage. If wrong, member will be blocked out of *Members Only* until they enter the right amount.
 
 ### 8. Member Fails to Confirm Tri-Monthly Credit Card Charge
-
 Alex doesn’t enter amount in time and is blocked from account. When Alex tries to access *Members Only*, they will be directed to a page telling them to send another charge. System tells credit card system to send another charge between $0.20 and $0.40. Credits card system sends another random charge. System sends Alex another email. System starts a timer for 3 days. Alex logs into their bank account and sees the charge from *Members Only*. Alex selects the button on email and is redirected to *Members Only*. Alex enters amount in and is either allowed back to website or entered the wrong amount.<br>
 
 ### 9. Member Posts Status Update on Personal Profile
-
 Alex will select an option on their profile page that reads “create new post”. Alex will type URL, and can add any additional text to the post. tinyURL generator will shorten the URL given. Alex will hit “post”. The webserver will receive the request send it to the backend. Backend will process the request and post Alex link to their profile feed. Backend services will send the link to the database to store it as something Alex is interested in for potential future advertisement reasons.<br>
 
 ### 10. Member Leaves Comment on Other Member's Status
-
 Alex will see their friend’s status on their profile feed. Alex will select the comment button that appears on the bottom of their friend’s post. The Webserver will get the request and pop up a text box overlay on the website. Alex will leave a comment, then hit “Post”. The Webserver will receive the request and send it to the backend services. Backend services will add it to the friend’s comment section on their post. <br>
 
 ### 11. Member Invites Non-Member to *Members Only*
-
 Alex navigates to the “Invite New Member” button on their profile page. On this page, Alex will fill in new members email address. Webserver will receive this information and pass it to the backend. Backend will save new members email to database. Backend will tell email system to send a new invitation email. New invitation email will be sent to new member. System will start a timer for 3 days.
 
 #### 11a. Potential New Member Accepts Offer to Join *Members Only*
-
 Alex will gain points. Webserver will receive this information and send it to the backend. Backend will add that many points to Alex’s point system.
 
 #### 11b. Potential New Member Declines Offer / Offer Expires
-
 Alex loses points. Webserver will receive this information and send it to the backend. Backend will subtract that many points from Alex’s point system.
 
 ### 12. New Member Signs Up With Sign Up Code
-
 Alex goes to *Members Only* homepage. Alex selects “create account with Special Code” button. Alex is redirected to new page with a text box asking for the code. Alex types in that code. Code is processed by the webserver and sent to the back end. Back end compares that code to a code that was created for a special event (concert, large show). Alex is redirected to a page to signs up (see above).<br>
 
 ### 13. Member Posts Photo to Profile
-
 Alex will choose “Post Photo” on their profile feed. Alex can navigate their device for the photo they wish to submit. Alex can then add any additional text to the post that they wish. Alex will then hit submit. The Web Server will receive the request and send it to backend services. Backend services will process and post the request. Backend will save image to database. Admins can use saved image for their own purposes. <br>
 
 ### 14. Member Applies/Removes Photo Filter  
-
 Alex will go through the post a photo process, except immediately after they choose their photo they will be given the option to apply a filter. Alex will scroll through various premade filters available on *Members Only*. Alex will choose a filter that will be applied to their photo. The post photo process then continues from here.
 
 #### 14a. Member Removes Filter
-
 Alex navigated to profile page and selects on the photo they wish to remove the filter on. Alex chooses “options”. Alex chooses remove filters. The filters will then be removed from the photo. Alex will then be prompted to confirm their changes. Alex will select “Confirm”. Request will be sent to the web server. Web server will send it to backend. Backend services will replace that photo with the originally posted photo.
 
 #### 14b. Member Adds Sponsored Content
-
 Alex will follow the posting photos process. Alex will then select "Add Sponsored Content". Alex can choose any of the items and place them anywhere in their photo using a drag and drop method. Alex will choose to submit their altered photo. The Web Server will receive the request and send it to backend services. Backend services will process and post the request. Backend will save image to database. Admins can access image and add/delete content as they please.
 
 #### 14c. Member Removes Sponsored Content
-
 Alex will go to their photo with added content. Alex will select options and be given an option to remove content from the photo. Alex will be shown what is added content in their photo such that they can navigate to it and choose to remove it. Alex will submit their changes. The Web Server will receive the request and send it to backend services. Backend services will process and post the request. Backend services will save image to the database. Admins can use image to add/remove/etc. Original poster will not be able to see these changes. 
 
 ### 15. Member Logs in to *Members Only*
@@ -158,18 +138,16 @@ If the credit card is denied, the system freezes the member’s account and chan
 If the request is successful, the database finds the matched member and takes a point off. Then the system sends updated point information to the frontend. The frontend updates the point information in a local storage and Alex will recoginize the changes.
 
 ### System Awards Points to Member
-Alex’s invitation gets accepted or he makes positive actions. The backend receives a request. The database finds the matched member information in a database and updates the matched member's information. The system sends updated point information to the frontend. The system updates the point information in a local storage and Alex will recognize the changes. 
+Alex’s invitation is accepted or actions are made awarding points. Backend receives request. Database finds the matched member information in database and updates the matched member's information. System sends updated point information to the frontend. System updates the point information in a local storage and Alex will see the changes. 
 
 ### System Receives Login Request From Frontend
-A frontend sends a login request to a backend. The backend gets a request that contains user information. The backend stores a member's current IP address into the database. The backend confirms whether the information given is matched with one of the user data in the database. The backend sends tokens and matched user information to the frontend. 
+The frontend sends a login request to the backend. Backend receives request containing user information. Backend stores a Member's current IP address within the database. The backend confirms that the information given is matched with one of the Member's data in the database. Backend sends tokens and matched user information to the frontend. 
 
 ### System Receives Logout Request From Frontend   
- Alex clicks a logout button in a frontend. The frontend detects when the logout button is clicked. The frontend sends a Alex’s singed out time to a backend. The backend stores Alex's logout time. The frontend destroys the session data in a local storage. The frontend redirects Alex to a landing page. 
+Alex selects "Logout" button on frontend. Frontend detects when the logout button is clicked. Frontend sends Alex’s signout time to backend. The backend stores Alex's logout time. The frontend destroys the session data in local storage. The frontend redirects Alex to a landing page. 
 
 ### System Receives Registration Request From Frontend 
-A potential member(Bob) fills out a registration form and clicks the register button. The backend gets a request that contains a potential user’s information 
-If the credit card information already exists, the backend sends an error to the frontend  and bob checks the error . If the credit card information does not exist in the database, The system checks the given credit card information is valid using credit card software. If the data is valid, the system stores new user information into the database. The frontend redirects Bob to a login page. 
-If the data is NOT valid, the backend sends an error to the frontend and Bob checks the error. 
+A potential New Member, Bob, fills out a registration form and selects the "Register" button. Backend receives a request containing a potential New Member's information. If the credit card information currently exists with database, backend sends error to frontend and Bob receives error message. If the credit card information does not exist within database, System checks that given credit information is valid using credit card software. If data is valid, System stores New Member information in database. Frontend will redirect Bob to *Members Only* login page. If the data is **not** valid, backend sends error to frontend and Bob must enter valid credit card details.
 
 ### System Collects/Stores Member's Information
 Alex performs specific expected actions. The frontend detects an item being clicked when a member clicks a specific post or recognizes an item(content) on the current screen (if a member stays longer than a particular second at the same page without scrolling down or going out to other pages). The frontend sends the item(content) information to the backend. The backend receives the data and stores them in the database.
