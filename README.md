@@ -1,6 +1,6 @@
 # What is Members Only?
 
-Members Only is a social media site where users, known as Members, can post statuses, photos, links, and everything else that one may post on another social media outlet. So what makes us different you may ask? Exclusivity. Not just anyone can join Members Only. You have to receive an invitation from another Member or be lucky enough to get an entrance code from one of our Idols. This makes Members Only a gated community, where we can house exactly the people that we want to be on the site. This is formulated and handpicked data, which can, and will, be used for a multitude of purposes. 
+Members Only is a social media site where users, known as Members, can post statuses, photos, links, and everything else that one may post on another social media outlet. So what makes us different you may ask? Exclusivity. Not just anyone can join Members Only. You have to receive an invitation from another Member or be lucky enough to get an entrance code from one of our Idols. This makes Members Only a gated community, where we can house exactly the people that we want to be on the site. This is formulated and handpicked data, which can, and will, be used for a multitude of profitable purposes. 
 
 # The Pillars of Members Only
 
