@@ -77,5 +77,4 @@ Alex will go to their photo with added content. Alex will select options and be 
 <summary>System</summary>
 
 
-hello
 </details>
