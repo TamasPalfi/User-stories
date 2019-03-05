@@ -68,7 +68,14 @@ After Catherine successfully enters her credit card information, she will be cha
 
 <details>
 <summary>Members</summary>
-  
+
+### 15. Member Logs in to *Members Only*
+
+Johnson wants to login in to *Members Only* and check his feed. To do this, Johnson will navigate to the *Members Only* homepage, which includes a login for existing users form. Johnson will enter his email address and password associated with his *Members Only* account. Johnson will then select LOGIN at the bottom of the form. If his email and password are correct, he will then be redirected to his *Members Only* feed. 
+- Non-functional Aspects:
+   - Web Server receives form submission
+   - Node.js backend receives login request and validates credentials
+
 ### 6. Member Updates Credit Card Information
 
 Alex will login to their profile. Alex will navigate to their settings page on their personal profile. Member will choose change credit card button. System will prompt user with text boxes to enter new credit card information. User will enter name of card. User will enter card number. User will enter expiration date. User will enter CVV. Alex will hit the submit form button. Credit card will then be verified to make sure it is valid. System will send this to the database to update the current credit card information with this information. Credit card information updates.
@@ -86,8 +93,7 @@ System will tell the credit card software it is time to charge Alex. Credit card
    - Node.js receives input and validates it is the same as amount charged
 
 ### 8. Member Fails to Enter Correct Charge Before Expiration
-
-Alex doesn’t enter amount in time and is blocked from account. When Alex tries to access *Members Only*, they will be directed to a page telling them to send another charge. System tells credit card system to send another charge between $0.20 and $0.45. Credits card system sends another random charge. System sends Alex another email. System starts a timer for 3 days. Alex logs into their bank account and sees the charge from *Members Only*. Alex selects the button on email and is redirected to *Members Only*. Alex enters amount in and is either allowed back to website or entered the wrong amount.
+Alex does not enter the correct charge amount before expiration (3 days), and is blocked from using *Members Only*. When Alex tries to access *Members Only*, they are directed to a page asking to send an additional charge. Alex selects "Confirm" button. Alex's credit card is charged a random amount between $0.20 and $0.45. Alex receives another email and selects the link within the email. They are redirected to *Member's Only* where they enter the correct charge amount. Alex's use of *Members Only* is restored.
 - Non-Functional Aspects:
    - Node.js backend sends automated credit card charge using Stripe.js
    - Web Server receives charge amount input
@@ -174,13 +180,6 @@ Alex will go to their photo with added content. Alex will select options and be 
    - Node.js backend uses database interface to update post table with new post 
    - Node.js backend uses database interface to update photo table with new photo
    - Node.js backend uses database interface to update filtered photo table with new photo
-
-### 15. Member Logs in to *Members Only*
-
-Johnson wants to login in to *Members Only* and check his feed. To do this, Johnson will navigate to the *Members Only* homepage, which includes a login for existing users form. Johnson will enter his email address and password associated with his *Members Only* account. Johnson will then select LOGIN at the bottom of the form. If his email and password are correct, he will then be redirected to his *Members Only* feed. 
-- Non-functional Aspects:
-   - Web Server receives form submission
-   - Node.js backend receives login request and validates credentials
 
 ### 16. Member Forgets Password or Inputs Invalid Password
 
