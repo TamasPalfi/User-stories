@@ -134,7 +134,7 @@ Alex will go through the "Member Posts Photo to Profile" process [SEE # 13], but
    - Node.js backend uses database interface to update photo table with new photo
    - Node.js backend uses database interface to update filtered photo table with new photo
 
-#### 15. Member Removes Photo Filter
+### 15. Member Removes Photo Filter
 Alex navigates to his profile page and selects the photo he wishes to remove the filter on. Alex selects “Photo Options”. Alex then selects "Remove Filter". The filter is then removed from the photo. Alex is then prompted to confirm their changes. Alex will select "Confirm".
 - Non-functional Aspects:
    - Web Server receives new post and photo
@@ -143,7 +143,7 @@ Alex navigates to his profile page and selects the photo he wishes to remove the
    - Node.js backend uses database interface to update photo table with new photo
    - Node.js backend uses database interface to update filtered photo table with new photo
 
-#### 16. Member Adds Sponsored Content to Photo
+### 16. Member Adds Sponsored Content to Photo
 Alex will go through the "Member Posts Photo to Profile" process [SEE # 13], but immediately after choosing his photo he will instead select "Add Sponsored Content". Alex will have the choice of the items currently available on *Members Only*, and can drag and drop them onto his photo. Once finished, Alex will confirm changes by clicking "Confirm". 
 - Non-functional Aspects:
    - Web Server receives new post and photo
@@ -193,7 +193,7 @@ Danny wants to hide his activity from non-followers on *Members Only*. To do thi
 Alex has decided he no longer wants to see Brian's updates on *Members Only* because his posts are annoying. Thankfully, Alex did not invite Brian so he can do this. Alex navigates to Brian's profile page where they select the "Unfollow" button on Brian's page. Alex is then met with a confirmation popup, "Are you sure you want to unfollow **Brian**?". They confirm their choice to unfollow Brian by selecting the "Yes" button. Alex is then redirected to the *Members Only* homepage. Alex can no longer see any of Brian's updates - which he is very happy about. 
 
 ### 23. Member Blocks Another Member
-Jessica has just broken with Alex, and Alex has been sending threatening messages to Jessica. He won't leave her alone on *Member's Only*. She has decided that it's in her best interest to block Alex. Jessica navigates to Alex's profile page on *Members Only*. She selects the "Block" button on Alex's page, where she is met with a confirmation popup with an optional "Reason For Blocking" textbox. Jessica decides to give the details of her experience in this textbox. She then confirms "Are you sure you want to block **Alex**? **This action cannot be undone.**" Jessica selects the "Yes" confirmation button. She is returned to the *Member's Only* homepage, and all communication between Jessica and Alex is blocked.
+Jessica has just broken with Alex, and Alex has been sending threatening messages to Jessica. He won't leave her alone on *Members Only*. She has decided that it's in her best interest to block Alex. Jessica navigates to Alex's profile page on *Members Only*. She selects the "Block" button on Alex's page, where she is met with a confirmation popup with an optional "Reason For Blocking" textbox. Jessica decides to give the details of her experience in this textbox. She then confirms "Are you sure you want to block **Alex**? **This action cannot be undone.**" Jessica selects the "Yes" confirmation button. She is returned to the *Members Only* homepage, and all communication between Jessica and Alex is blocked.
 - Non-functional Aspects:
    - Web Server receives block request
    - Node.js backend receives block request
@@ -244,7 +244,7 @@ Administrator Andrew wants to make *Members Only* more visually pleasing. He dec
 Tony loves using *Members Only*, and as a popular social media figure, he has the designation as an Idol. Due to this, he has all the privileges of a Member [SEE# 6-24].  Addtionally, he has access to unlimited invitations and unlimited invitation codes. Notably, he also has unlimited *Members Only* points.
 
 ### 29. Idol Invites a New Member
-Tony, an idol, wants to contribute to the web site’s overall member base count by inviting new members to the site.  He does this to increase the web traffic to Member’s Only and increase his own revenue.  As a Member, he may send an invitation via email [SEE# 12]. The alternate mode of invitation is via invitation code. Tony may receive invitation codes by selecting "Invitation Code Generation", which will generate a new random invitation code that is valid for 30 days.
+Tony, an Idol, wants to contribute to the web sites overall Member base count by inviting new members to the site.  He does this to increase the web traffic to *Members Only* and increase his own revenue. As a Member, he may send an invitation via email [SEE# 12]. The alternate mode of invitation is via invitation code. Tony may receive invitation codes by selecting "Invitation Code Generation", which will generate a new random invitation code that is valid for 30 days.
 - Non-functional Aspects
    - Web Server receives request to send a new invitation link
    - Node.js backend processes request and sends an automated email with link
