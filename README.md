@@ -63,34 +63,34 @@ After Catherine successfully confirms her credit card information, she will be c
 <details>
 <summary>Members</summary>
 
-### 15. Member Logs in to *Members Only*
+### 6. Member Logs in to *Members Only*
 Johnson wants to log into *Members Only* and check his feed. To do this, Johnson will navigate to the *Members Only* homepage, which includes a login for existing users form. Johnson will enter his email address and correct password associated with his *Members Only* account. Johnson will then select "Login". If the correct email/password combination are entered, he will then be redirected to his *Members Only* feed. 
 - Non-functional Aspects:
    - Web Server receives form submission
    - Node.js backend receives login request and validates credentials
 
-### 6. Member Updates Credit Card Information
+### 7. Member Updates Credit Card Information
 Alex must be logged into *Members Only*. From the homepage, he will select "Settings" and be redirected to a *Members Only* webpage. He will then select "Change Payment Details". Alex will now need to confirm his new credit card details [SEE #4]. He will also need to confirm a credit charge [SEE #5].
  - Non-Functional Aspects:
    - Web Server receives form submission
    - Web Server sends to Node.js backend
    - Node.js backend accesses database through interface calls to update information associated with particular Member
 
-### 7. Member Confirms Tri-Monthly Credit Card Charge
+### 8. Member Confirms Tri-Monthly Credit Card Charge
 Every 3 months, Alex will receive a random credit card charge between the amounts $0.20 and $0.45. He will receive an automated email at specified time period asking him to validate the charge made to his account. He will then select the link within the email. For confirming a credit card charge [SEE # 5]. This must be done within 4 days of receiving the original email. If done correctly, Alex will be able to continue using *Members Only* until his next Tri-Monthly charge.
 - Non-Functional Aspects:
    - Node.js backend sends automated credit card charge using Stripe.js
    - Web Server receives charge amount input
    - Node.js receives input and validates it is the same as amount charged
 
-### 8. Member Fails to Confirm Tri-Monthly Charge Before Expiration
+### 9. Member Fails to Confirm Tri-Monthly Charge Before Expiration
 Alex does not enter the correct charge amount before expiration (4 days), and is blocked from using *Members Only*. When Alex tries to access *Members Only*, they are directed to a page asking to send an additional charge. Alex selects "Confirm" button. Alex's credit card is charged a random amount between $0.20 and $0.45. Alex receives another email and selects the link within the email. They are redirected to *Member's Only* where they enter the correct charge amount. Alex's use of *Members Only* is restored.
 - Non-Functional Aspects:
    - Node.js backend sends automated credit card charge using Stripe.js
    - Web Server receives charge amount input
    - Node.js receives input and validates it is the same as amount charged
 
-### 9. Member Posts a Status Update on Personal Profile
+### 10. Member Posts a Status Update on Personal Profile
 Alex will select an option on their profile page that reads "Create New Post". He will then be met with a textbox popup where he may enter text and/or hyperlinks. If entering a hyperlink, Alex will select the "URL Shortener" button, where he will proceed to enter the full URL. Once finished editing his status update, Alex will select "Post". The URL will appear in shortened form upon posting his status update.
 
 - Non-Functional Aspects:
@@ -98,23 +98,23 @@ Alex will select an option on their profile page that reads "Create New Post". H
    - Node.js backend receives post information and posts it
    - Node.js backend uses database interface to update post table with new post 
 
-### 10. Member Leaves Comment on Other Member's Status
+### 11. Member Leaves Comment on Other Member's Status
 Alex sees their friend’s status on their profile feed. Alex will select the "Comment" button that appears on the bottom of their friend’s post. Alex will be met with a textbox popup, in which he will type his comment. Once finished, he will select the "Post" button. 
 - Non-functional Aspects:
    - Web Server receives new post
    - Node.js backend receives comment information and posts it
    - Node.js backend uses database interface to update comment table with new post 
 
-### 11. Member Invites a Potential New Member to *Members Only*
+### 12. Member Invites a Potential New Member to *Members Only*
 Alex navigates to the “Invite New Member” button on the *Members Only* homepage to invite his friend Marisa. He will be redirected to a new webpage with a form, with required fields of potential New Member's valid email address, name, and optional dropdown menu of "How You Know This Person". He will then fill in the required fields with Marisa's details, and select "Submit". 1000 points are removed from Alex's account. 
 - Non-functional Aspects
    - Web Server receives request to send a new invitation link
    - Node.js backend processes request and sends an automated email with link
    - Node.js backend keeps track of how long invitation has been out for
    
-#### 11a. Potential New Member Accepts Invitation
+#### 12a. Potential New Member Accepts Invitation
 Marisa receives an email from *Members Only* to join. She selects the hyperlink in the email, and is brought to a webpage asking to confirm joing *Members Only*. She selects "Yes". For signup details [SEE #1]. Alex receives 50 points. 
-#### 11b. Potential New Member Lets Invitation Link Expire
+#### 12b. Potential New Member Lets Invitation Link Expire
 Marisa receives an email from *Members Only* to join. She does not see the email, or does not want to join *Members Only*. After 4 days, the link expires. Alex loses an additional 100 points. 
 
 ### 13. Member Posts Photo to Profile
@@ -134,7 +134,7 @@ Alex will go through the "Member Posts Photo to Profile" process [SEE # 13], but
    - Node.js backend uses database interface to update photo table with new photo
    - Node.js backend uses database interface to update filtered photo table with new photo
 
-#### 14. Member Removes Photo Filter
+#### 15. Member Removes Photo Filter
 Alex navigates to his profile page and selects the photo he wishes to remove the filter on. Alex selects “Photo Options”. Alex then selects "Remove Filter". The filter is then removed from the photo. Alex is then prompted to confirm their changes. Alex will select "Confirm".
 - Non-functional Aspects:
    - Web Server receives new post and photo
@@ -143,7 +143,7 @@ Alex navigates to his profile page and selects the photo he wishes to remove the
    - Node.js backend uses database interface to update photo table with new photo
    - Node.js backend uses database interface to update filtered photo table with new photo
 
-#### 14. Member Adds Sponsored Content to Photo
+#### 16. Member Adds Sponsored Content to Photo
 Alex will go through the "Member Posts Photo to Profile" process [SEE # 13], but immediately after choosing his photo he will instead select "Add Sponsored Content". Alex will have the choice of the items currently available on *Members Only*, and can drag and drop them onto his photo. Once finished, Alex will confirm changes by clicking "Confirm". 
 - Non-functional Aspects:
    - Web Server receives new post and photo
@@ -152,7 +152,7 @@ Alex will go through the "Member Posts Photo to Profile" process [SEE # 13], but
    - Node.js backend uses database interface to update photo table with new photo
    - Node.js backend uses database interface to update filtered photo table with new photo
    
-### 22. Member Flags Photo As Inappropriate/Illegal
+### 17. Member Flags Photo As Inappropriate/Illegal
 Alex is browsing *Members Only* and comes across a photo they believe to be inappropriate
 and/or illegal. Alex proceeds to select the “Report” button under said photo. They are then
 prompted with a textbox asking for comments on reasoning for reporting the photo. Alex enters
@@ -163,43 +163,43 @@ After hitting confirm, the web server receives the report. The web server sends 
 backend services. Backend services will process the report, and send to Administrators for
 further action.
 
-### 16. Member Forgets Password/Inputs Invalid Password
+### 18. Member Forgets Password/Inputs Invalid Password
 Johnson wants to log into *Members Only*, but has forgotten his password. He will select the button "Forgot Password". This will redirect him to a different form on the *Members Only* website where he will fill enter the required fields of his email address and full name. Johnson will then be sent an email with a link to reset his password. Johnson will select the link, and be redirected to a *Members Only* webpage. He will be required to enter a new password in one textbox, and confirm his password in a second textbox. He will then select "Submit". If the passwords match, Johnson's password is successfully changed and he is redirected to a webpage confirming successful password change. 
 - Non-functional Aspects:
    - Web Server receives form submission
    - Node.js backend receives login request and rejects credentials
 
-### 17. Member Forgets Email/Inputs Invalid Email
+### 19. Member Forgets Email/Inputs Invalid Email
 Johnson directs himself to the *Members Only* homepage and tries to log into his account. However, Johnson has forgotten the email address associated with his account. Johnson will select "Forgot Email" and be redirected to a form where he must enter his full name and address. After filling in these details, he will select "Submit". If the name and address match a Member at *Members Only*, Johnson will be redirected to a webpage providing his email associated with *Members Only*. 
 - Non-functional Aspects:
    - Web Server receives form submission
    - Node.js backend receives login request and rejects credentials
 
-### 18. Member Changes Password
+### 20. Member Changes Password
 Larry wants to change his password, for security reasons. Larry will select "Settings" from any *Members Only* webpage. Larry will then select "Change Password". Larry will be brought to a separate page where he will be prompted to enter his current password, new password, and confirmation of new password. Larry will then select "Confirm" and the system will verify that the new passwords are identical and current password is correct. If everything is correct, Larry will be redirected back to his *Members Only* feed confirming change of password. If new passwords do not match, he will be met with an error and need to resubmit.  
 - Non-functional Aspects:
    - Web Server receives form submission
    - Node.js backend receives new password
    - Node.js uses database interface to update values associated with Member
 
-### 19. Member Changes Visibility Settings 
+### 21. Member Changes Visibility Settings 
 Danny wants to hide his activity from non-followers on *Members Only*. To do this, Danny will select the "Settings" buttom from any *Members Only* webpage. From here, he will select "Visibility" where he will find a toggle button. He will select the button, changing his profile from "Non-Private" to "Private".privatized profile. This will hide his activity from non-followers.
 - Non-functional Aspects:
    - Web Server receives change of privacy request
    - Node.js backend receives request
    - Node.js uses database interface to update values associated with Member
    
-### 24. Member Unfollows Another Member
+### 22. Member Unfollows Another Member
 Alex has decided he no longer wants to see Brian's updates on *Members Only* because his posts are annoying. Thankfully, Alex did not invite Brian so he can do this. Alex navigates to Brian's profile page where they select the "Unfollow" button on Brian's page. Alex is then met with a confirmation popup, "Are you sure you want to unfollow **Brian**?". They confirm their choice to unfollow Brian by selecting the "Yes" button. Alex is then redirected to the *Members Only* homepage. Alex can no longer see any of Brian's updates - which he is very happy about. 
 
-### 25. Member Blocks Another Member
+### 23. Member Blocks Another Member
 Jessica has just broken with Alex, and Alex has been sending threatening messages to Jessica. He won't leave her alone on *Member's Only*. She has decided that it's in her best interest to block Alex. Jessica navigates to Alex's profile page on *Members Only*. She selects the "Block" button on Alex's page, where she is met with a confirmation popup with an optional "Reason For Blocking" textbox. Jessica decides to give the details of her experience in this textbox. She then confirms "Are you sure you want to block **Alex**? **This action cannot be undone.**" Jessica selects the "Yes" confirmation button. She is returned to the *Member's Only* homepage, and all communication between Jessica and Alex is blocked.
 - Non-functional Aspects:
    - Web Server receives block request
    - Node.js backend receives block request
    - Node.js uses blocks data communication between these two Members
 
-### 21. Member Reports Another Member
+### 24. Member Reports Another Member
 Phil wants to report another Member on *Members Only* for an offensive action. Phil will navigate to the perpetrator's *Members Only* profile page. He will then select "Report Member". Phil will be redirected to a webpage with a textbox where Phil will enter the details of his report. Phil will then select "Submit". The details of the report will be forwarded to the Administrators of *Members Only* for further review.
 - Non-functional Aspects:
    - Web Server receives block request
@@ -212,22 +212,22 @@ Phil wants to report another Member on *Members Only* for an offensive action. P
 <details>
 <summary>Admin</summary>
 
-### 22. Administrator Removes Member's Access to Member's Only
-Administrator Ava is working through checking the flagged content on the Member’s Only site, and she encounters the profile of Jonas (a member) who was flagged for posting inappropriate content.  Ava directs herself to view Jonas’s profile via frontend interactions.  From there, she must review all the flagged content on his profile and come to a decision on whether Jonas should be removed or not from Member’s Only.  Ava concludes that Jonas must be removed for violating the site’s posting policy.  She selects the “Remove Member” button via the webpage which should then cause a confirmation pop-up to occur.  Ava selects the “Yes” option which causes the web server to receive that request and send the needed backend services to comply with that order.  The backend removes Jonas as a member by effectively deleting the profile page and all associated comments with the profile, but the personal data is retained.  
+### 25. Administrator Removes Member's Access to *Members Only*
+Administrator Ava is working through checking the flagged content on the *Members Only* and she encounters the profile of Jonas (a Member) who was flagged for posting inappropriate content.  Ava directs herself to view Jonas’s profile. From there, she may review all the flagged content on his profile and come to a conclusion on whether or not Jonas should be removed or not from *Members Only*.  Ava concludes that Jonas must be removed for violating the site’s posting policy. She selects the “Remove Member” button via the Jonas' profile page, with a confirmation window pop-up. She selects "Confirm. Jonas is removed from *Members Only* and his content is no longer viewable. Jonas receives an email notifying him of this action.
 - Non-functional Aspects:
    - Web Server receives removal request
    - Node.js backend receives removal request
    - Node.js disallows Member's credentials to be used to login
 
-### 23. Administrator Removes Content Flagged as Inappropriate/Illegal
-Administrator Ava is working through checking the flagged content on the Member’s Only site when she receives a report of inappropriate content in the form of a flagged photo.  Ava directs herself to review the flagged photo via frontend interactions, and she must come to a decision on whether the photo should be removed or not.  After noticing that the photo does indeed contain child pornography images on it, Ava proceeds with removing the photo.  She selects the “Remove Post/Photo” button on the web page which would cause a confirmation pop-up to occur.  After selecting the “Yes” button, the web server receives that request to remove post and directs it to the backend.  The backend then removes the flagged photo from the page AND the database (no need to keep flagged data).  
+### 26. Administrator Removes Content Flagged as Inappropriate/Illegal
+Administrator Ava is working through checking the flagged content on *Members Only* and receives a report of inappropriate content in the form of a flagged photo. Ava directs herself to review the flagged photo, and she must come to a conclusion on whether the photo should be removed or not. She deems the content inappropriate/illegal, and proceeds to remove the photo. She selects the “Remove Post/Photo” button on the webpage of the photo, causing a confirmation popup to occur. She selects "Confirm", and the content is removed from *Members Only*.
 - Non-functional Aspects:
    - Web Server receives removal request
    - Node.js backend receives removal request
    - Node.js uses database interface to remove data from the site
 
-### 24. Administrator Edits Member's Photo
-Administrator Andrew wants to make Member’s Only the best visually pleasing web-page out there.  Thus, he decides he wants to edit a member’s photo to add a filter in the hopes that it would increase web traffic to the site.  First, Andrew directs the web page via frontend interactions to the photo on Curtis’s (a member) profile that he would like to edit. Andrew selects the “Edit” button next to the photo, and he uses the photo editing software to apply a color filter.  After making the necessary revisions, he selects the “Save” button which would cause a confirmation pop-up to occur.  Andrew confirms he’s satisfied with the changes by selecting the “Yes” button.  The web server receives this request to save and sends it to the backend.  The backend then saves this new photo to the database as well without removing the original photo.  However, the filter has been added and the photo is updated correctly.  Adding filters is not the only thing that Andrew can do to Curtis’s photo. He could also choose to add sponsored content which he would do to also increase web traffic and revenue in terms of partnerships.  The process Andrew take to do that is nearly identical to the filtering case except Andrew uses the photo editing software to input another image (the sponsored content) onto the photo rather than apply a filter.  It’s also important to note that these two interactions described above could very well occur as or in a comment instead of a post.  This is as simple as just a different location where Andrew is working to change content from.  A final comment is that visibility does have an effect here, as Curtis would not see the changed content on his own profile but rather what he originally posted.
+### 27. Administrator Edits Member's Photo
+Administrator Andrew wants to make *Members Only* more visually pleasing. He decides he wants to edit a member’s photo to add a filter in the hopes that it would increase web traffic to the site. First, Andrew directs himself to the webpage containing the photo he wants to edit, on Member Curtis' page. He proceeds to edit the photo [SEE #14-16]. After making the necessary revisions, he selects the "Confirm" button, altering the photo. Curtis will not see the changed content on his own profile but rather what he originally posted - while all other Members of *Members Only* will see the altered photo.
 - Non-functional Aspects:
    - Web Server receives new post and photo
    - Node.js backend receives post information and posts it
@@ -237,51 +237,49 @@ Administrator Andrew wants to make Member’s Only the best visually pleasing we
 
 </details>
 
-
-
 <details>
 <summary>Idol</summary>
 
-### 25. Idol Has All Privileges of a Member
-Tony loves using Member’s Only, and as a popular social figure he has the designation from the Member’s Only site as an idol.  That basically grants him additional capabilities on the site outside of what a normal member can do such as unlimited invitations and ability to post sponsored content.  However, it is important to remember the fact that Tony still is essentially a member.  Thus, as such, he can do all the basic functionally that a member does such as posting a status update, commenting, posting a photo, and applying filters to photos.
+### 28. Idol Has All Privileges of a Member
+Tony loves using *Members Only*, and as a popular social media figure, he has the designation as an Idol. Due to this, he has all the privileges of a Member [SEE# 6-24].  Addtionally, he has access to unlimited invitations and unlimited invitation codes. Notably, he also has unlimited *Members Only* points.
 
-### 26. Idol Invites a New Member
-Tony, an idol, wants to contribute to the web site’s overall member base count by inviting new members to the site.  He does this to increase the web traffic to Member’s Only and increase his own revenue.  There are two ways an idol can send invitations; the normal way for most members which is through an email invitation or via code referral.  To send via email invitation link, Tony selects the “Send Invitation Link” button on the web page.  He enters the email address of his friend Bruce which is bruce4321@gmail.com, and the system confirms that it is a valid email address. It is in fact a valid email address, so Tony selects the “Confirm” button to send the invitation link.  It’s important to note here that as an idol, Tony has unlimited number of invitations, so he doesn’t get docked any points upon inviting his friend.  The next way of inviting is through the code system.  Tony will generate a random, new invitation code which will be suitable for one invitation only.  Tony can then give this code out through a variety of means either through person, message, Facebook, or any other communication means.  Whoever receives this code from Tony, then must use it when signing up for Member’s Only.
+### 29. Idol Invites a New Member
+Tony, an idol, wants to contribute to the web site’s overall member base count by inviting new members to the site.  He does this to increase the web traffic to Member’s Only and increase his own revenue.  As a Member, he may send an invitation via email [SEE# 12]. The alternate mode of invitation is via invitation code. Tony may receive invitation codes by selecting "Invitation Code Generation", which will generate a new random invitation code that is valid for 30 days.
 - Non-functional Aspects
    - Web Server receives request to send a new invitation link
    - Node.js backend processes request and sends an automated email with link
    - Node.js backend keeps track of how long invitation has been out for
 
-### 27. Idol's Visibility
-Since idols are the “Popular” faces of Member’ Only, we want it to be the case that all members should be allowed to see their profiles. Thus, idols don’t have the visibility toggle option as a part of their profile allowing all members to be able to follow their profile.  This differs from regular members in which they can toggle their visibility of their profile from specific members.  
-</details>
+### 30. Idol Visibility
+Idols are the *faces* of *Members Only*, and as such need to be highly visible. Thus, Idols do not have a visibility toggle option like Members. we want it to be the case that all members should be allowed to see their profiles.
 
+</details>
 
 <details>
 <summary>System</summary>
  
-### 28. System Deducts Points From Member  
+### 31. System Deducts Points From Member  
 The backend receives a request from the frontend. The backend sent a request to the credit card company using a credit card software.
 If the credit card is denied, the system freezes the member’s account and changes the permission of the member in a database. 
 If the request is successful, the database finds the matched member and takes a point off. Then the system sends updated point information to the frontend. The frontend updates the point information in a local storage and Alex will recoginize the changes.
 
-### 29. System Awards Points To Member  
+### 32. System Awards Points To Member  
 Alex’s invitation is accepted or he makes positive actions. The backend receives a request. The database finds the matched member information in a database and updates the matched member's information. The system sends updated point information to the frontend. The system updates the point information in a local storage and Alex will recognize the changes. 
 
-### 30. System Receives Login Request From Frontend 
+### 33. System Receives Login Request From Frontend 
 A frontend sends a login request to a backend. The backend gets a request that contains user information. The backend stores a member's current IP address into the database. The backend confirms whether the information given is matched with one of the user data in the database. The backend sends tokens and matched user information to the frontend. 
 
-### 31. System Receives Logout Request From Frontend   
+### 34. System Receives Logout Request From Frontend   
  Alex selects the “Logout” button from frontend. Frontend detects when the “Logout” button is selected. The frontend sends Alex’s sign out time to backend. Backend stores Alex's logout time. Frontend removes the session data in local storage. The frontend redirects Alex to a landing page. 
 
-### 32. System Receives Registration Request From Frontend 
+### 35. System Receives Registration Request From Frontend 
 A potential member(Bob) fills out a registration form and selects the “Register” button. The backend receives a request that contains a potential New Member’s information.
 If the credit card information already exists, the backend sends an error to the frontend  and bob checks the error . If the credit card information does not exist in the database, The system checks the given credit card information is valid using credit card software. If the data is valid, the system stores new user information into the database. The frontend redirects Bob to a login page. 
 If the data is NOT valid, the backend sends an error to the frontend and Bob checks the error. 
 
-### 33. System Retains Member's Actions (Interests)
+### 36. System Retains Member's Actions (Interests)
 Alex performs specific expected actions. The frontend detects an item being selected when a member selects a specific post or recognizes an item(content) on the current screen (if a member stays longer than a particular second at the same page without scrolling down or going out to other pages). The frontend sends the item(content) information to the backend. The backend receives the data and stores them in the database.
 
-### 34. System Converts URL to Shortened URL 
+### 37. System Converts URL to Shortened URL 
 The frontend sends the request to a backend. Then the frontend sends a request to the backend with original URL information. The backend receives the request and uses a hash function to generate a shortened URL. The system saves the shortened URL into the database. The system sends the shortened URL to the frontend. In the case of the system can't perform shortening, it will use the original URL. 
 </details>
