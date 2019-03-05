@@ -1,4 +1,4 @@
-<center><h3><b>Non-Functional Requirement</b></h3></center>
+<center><h1><b>Non-Functional Requirement</b></h1></center>
 
 ### FrontEnd 
 ***React.js***   
@@ -54,28 +54,60 @@
 
 - Much more query features of SQL than MySQL.
 
-***Our Preliminary Fields and their Associated Values***
+***Our Preliminary Tables and their Associated Values***
 <details>
     <summary>Member</summary>
-    - email
+        - email: string
     <br>
-    - password
+        - password: string
+    <br>
+        - isAdmin: boolean
+    <br>
+        - points: integer
+    <br>
+        - credit_card_number: integer
+    <br>
+        - credit_card_cvv: integer
+    <br>
+        - is_private: boolean
 </details>
 
 <details>
     <summary>Post</summary>
+        - text: string
+    <br>
+        - date_time: date and time field
+    <br>
+        - user_key: key that links post to user
 </details>
 
 <details>
     <summary>Comments</summary>
+        - text: string
+    <br>
+        - date_time: date and time field
+    <br>
+        - post_key: key to linked post
+    <br>
+        - user_key: key to specific user
 </details>
 
 <details>
     <summary>Photos</summary>
+        - photo: image file
+    <br>
+        - user_key: key to associated user
 </details>
 
 <details>
     <summary>Filtered Photos</summary>
+        - photo: image file
+    <br>
+        - filter: tracks added content or filter
+    <br>
+        - photo_key: key to original photo
+    <br>
+        - user_key: key to associated user
 </details>
 
 ### Application Map
