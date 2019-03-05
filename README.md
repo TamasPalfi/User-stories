@@ -147,8 +147,14 @@ Phil wants to report another member on Members Only for an offensive action. Phi
 <details>
 <summary>Idol</summary>
 
+### 29. Idol Has All Privleges of a Member
+Tony loves using Member’s Only, and as a popular social figure he has the designation from the Member’s Only site as an idol.  That basically grants him additional capabilities on the site outside of what a normal member can do such as unlimited invitations and ability to post sponsored content.  However, it is important to remember the fact that Tony still is essentially a member.  Thus, as such, he can do all the basic functionally that a member does such as posting a status update, commenting, posting a photo, and applying filters to photos.
 
+### 30. Idol Invites a New Member
+Tony, an idol, wants to contribute to the web site’s overall member base count by inviting new members to the site.  He does this to increase the web traffic to Member’s Only and increase his own revenue.  There are two ways an idol can send invitations; the normal way for most members which is through an email invitation or via code referral.  To send via email invitation link, Tony selects the “Send Invitation Link” button on the web page.  He enters the email address of his friend Bruce which is bruce4321@gmail.com, and the system confirms that it is a valid email address. It is in fact a valid email address, so Tony selects the “Confirm” button to send the invitation link.  It’s important to note here that as an idol, Tony has unlimited number of invitations, so he doesn’t get docked any points upon inviting his friend.  The next way of inviting is through the code system.  Tony will generate a random, new invitation code which will be suitable for one invitation only.  Tony can then give this code out through a variety of means either through person, message, Facebook, or any other communication means.  Whoever receives this code from Tony, then must use it when signing up for Member’s Only.
 
+### 31. Idol's Visibility
+Since idols are the “Popular” faces of Member’ Only, we want it to be the case that all members should be allowed to see their profiles. Thus, idols don’t have the visibility toggle option as a part of their profile allowing all members to be able to follow their profile.  This differs from regular members in which they can toggle their visibility of their profile from specific members.  
 </details>
 
 
