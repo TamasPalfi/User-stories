@@ -1,4 +1,4 @@
-<center><h3><b>Non-Functional Requirement</b></h3></center>
+<center><h1><b>Non-Functional Requirement</b></h1></center>
 
 ### FrontEnd 
 ***React.js***   
