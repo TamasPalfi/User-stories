@@ -105,7 +105,7 @@ Alex sees their friend’s status on their profile feed. Alex will select the "C
    - Node.js backend receives comment information and posts it
    - Node.js backend uses database interface to update comment table with new post 
 
-### 11. Member Invites a Non-Member to *Members Only*
+### 11. Member Invites a Potential New Member to *Members Only*
 Alex navigates to the “Invite New Member” button on the *Members Only* homepage to invite his friend Marisa. He will be redirected to a new webpage with a form, with required fields of potential New Member's valid email address, name, and optional dropdown menu of "How You Know This Person". He will then fill in the required fields with Marisa's details, and select "Submit". 1000 points are removed from Alex's account. 
 - Non-functional Aspects
    - Web Server receives request to send a new invitation link
@@ -126,7 +126,7 @@ From their profile page, Alex selects "Post Photo". Alex is met with a popup win
    - Node.js backend uses database interface to update photo table with new photo
 
 ### 14. Member Edits Photo Before Posting
-Alex will go through the "Member Posts Photo to Profile" process [SEE # 13], but immediately after choosing his photo he will instead select "Filter Photo". Alex will now be able to scroll through various premade filters available on *Members Only*. Alex will choose a filter that will be applied to their photo. 
+Alex will go through the "Member Posts Photo to Profile" process [SEE # 13], but immediately after choosing his photo he will instead select "Filter Photo". Alex will now be able to scroll through various premade filters available on *Members Only*. Alex will choose a filter that will be applied to their photo, and continue the photo posting process.
 - Non-functional Aspects:
    - Web Server receives new post and photo
    - Node.js backend receives post information and posts it
@@ -135,75 +135,72 @@ Alex will go through the "Member Posts Photo to Profile" process [SEE # 13], but
    - Node.js backend uses database interface to update filtered photo table with new photo
 
 #### 14. Member Removes Photo Filter
-Alex navigates to his profile page and selects the photo he wishes to remove the filter on. Alex selects “Photo Options”. Alex then selects "Remove Filter". The filter is then removed from the photo. Alex is then prompted to confirm their changes. Alex will select “Confirm”.
+Alex navigates to his profile page and selects the photo he wishes to remove the filter on. Alex selects “Photo Options”. Alex then selects "Remove Filter". The filter is then removed from the photo. Alex is then prompted to confirm their changes. Alex will select "Confirm".
 - Non-functional Aspects:
    - Web Server receives new post and photo
    - Node.js backend receives post information and posts it
    - Node.js backend uses database interface to update post table with new post 
    - Node.js backend uses database interface to update photo table with new photo
    - Node.js backend uses database interface to update filtered photo table with new photo
-
 
 #### 14. Member Adds Sponsored Content to Photo
-Alex will follow the posting photos process. Alex will then select “Add Content”. Alex can choose any of the items and place them anywhere in their photo using a drag and drop method. Alex will choose to submit their altered photo. The Web Server will receive the request and send it to backend services. Backend services will process and post the request. Backend will save image to database. Admins can access image and add/delete content as they please.
+Alex will go through the "Member Posts Photo to Profile" process [SEE # 13], but immediately after choosing his photo he will instead select "Add Sponsored Content". Alex will have the choice of the items currently available on *Members Only*, and can drag and drop them onto his photo. Once finished, Alex will confirm changes by clicking "Confirm". 
 - Non-functional Aspects:
    - Web Server receives new post and photo
    - Node.js backend receives post information and posts it
    - Node.js backend uses database interface to update post table with new post 
    - Node.js backend uses database interface to update photo table with new photo
    - Node.js backend uses database interface to update filtered photo table with new photo
+   
+### 22. Member Flags Photo As Inappropriate/Illegal
+Alex is browsing *Members Only* and comes across a photo they believe to be inappropriate
+and/or illegal. Alex proceeds to select the “Report” button under said photo. They are then
+prompted with a textbox asking for comments on reasoning for reporting the photo. Alex enters
+details on why they believe the content to be inappropriate and/or illegal. Alex proceeds to
+select the “Confirm” button under the textbox. After selecting confirm, Alex is returned to the
+homepage of *Members Only*. 
+After hitting confirm, the web server receives the report. The web server sends the report to
+backend services. Backend services will process the report, and send to Administrators for
+further action.
 
-#### 14c. Member Removes Sponsored Content to Photo
-
-Alex will go to their photo with added content. Alex will select options and be given an option to remove content from the photo. Alex will be shown what is added content in their photo such that they can navigate to it and choose to remove it. Alex will submit their changes. The Web Server will receive the request and send it to backend services. Backend services will process and post the request. Backend services will save image to the database. Admins can use image to add/remove/etc. Original poster will not be able to see these changes. 
-- Non-functional Aspects:
-   - Web Server receives new post and photo
-   - Node.js backend receives post information and posts it
-   - Node.js backend uses database interface to update post table with new post 
-   - Node.js backend uses database interface to update photo table with new photo
-   - Node.js backend uses database interface to update filtered photo table with new photo
-
-### 16. Member Forgets Password or Inputs Invalid Password
-
-Johnson wants to login to *Members Only*, but he is stuck at the login form on the homepage of the site because he has forgotten the correct password associated with his account. Johnson will then select a link that says, “Forgot Password”. This will redirect him to a different form on the *Members Only* site where he will fill out his email and several other details associated with his account such as his name. Johnson will then be sent an email that sends him a new temporary password to login to his account. Johnson can then reset his password once he logs back into his account and accesses his settings. 
+### 16. Member Forgets Password/Inputs Invalid Password
+Johnson wants to log into *Members Only*, but has forgotten his password. He will select the button "Forgot Password". This will redirect him to a different form on the *Members Only* website where he will fill enter the required fields of his email address and full name. Johnson will then be sent an email with a link to reset his password. Johnson will select the link, and be redirected to a *Members Only* webpage. He will be required to enter a new password in one textbox, and confirm his password in a second textbox. He will then select "Submit". If the passwords match, Johnson's password is successfully changed and he is redirected to a webpage confirming successful password change. 
 - Non-functional Aspects:
    - Web Server receives form submission
    - Node.js backend receives login request and rejects credentials
 
-### 17. Member Forgets Email or Inputs Invalid Email
-
-Johnson directs himself to the *Members Only* homepage and tries to login to his account. However, Johnson has somehow forgotten the email associated with his *Members Only* account. After entering his information, Johnson will select “Submit”. The system will receive the email and attempt to verify who Johnson is, however because it is the incorrect email Johnson will be denied access to *Members Only* until he can recall the correct email address associated with his account. 
+### 17. Member Forgets Email/Inputs Invalid Email
+Johnson directs himself to the *Members Only* homepage and tries to log into his account. However, Johnson has forgotten the email address associated with his account. Johnson will select "Forgot Email" and be redirected to a form where he must enter his full name and address. After filling in these details, he will select "Submit". If the name and address match a Member at *Members Only*, Johnson will be redirected to a webpage providing his email associated with *Members Only*. 
 - Non-functional Aspects:
    - Web Server receives form submission
    - Node.js backend receives login request and rejects credentials
 
 ### 18. Member Changes Password
-
-Larry wants to change his password, either for security reasons or because he just logged in with a temporary password because he forgot his previous one. Larry will navigate to the SETTINGS portion of his account after immediately logging in. Larry will then navigate and choose the CHANGE PASSWORD option. Larry will be brought to a separate, private form where he will be prompted to enter a new password. After entering the new password, Larry will be prompted to enter it a second time as to confirm the password and eliminate the possibility of any typos. Larry will then select “Confirm” and the system will verify that the passwords are identical. If they are, then Larry will be redirected back to his *Members Only* feed. Otherwise, Larry will be prompted to enter and reenter the new password again until he successfully enters the same password twice. 
+Larry wants to change his password, for security reasons. Larry will select "Settings" from any *Members Only* webpage. Larry will then select "Change Password". Larry will be brought to a separate page where he will be prompted to enter his current password, new password, and confirmation of new password. Larry will then select "Confirm" and the system will verify that the new passwords are identical and current password is correct. If everything is correct, Larry will be redirected back to his *Members Only* feed confirming change of password. If new passwords do not match, he will be met with an error and need to resubmit.  
 - Non-functional Aspects:
    - Web Server receives form submission
    - Node.js backend receives new password
    - Node.js uses database interface to update values associated with Member
 
 ### 19. Member Changes Visibility Settings 
-
-Danny wants to hide his activity from non-followers on *Members Only*. To do this, Danny will go to his personal page and access the SETTINGS portion of the page. Danny will then navigate to the toggle button which allows them to switch between a privatized and un-privatized profile. Since Danny wants to privatize his page, he will select this toggle button to the on setting, effectively hiding his activity from non-followers. 
+Danny wants to hide his activity from non-followers on *Members Only*. To do this, Danny will select the "Settings" buttom from any *Members Only* webpage. From here, he will select "Visibility" where he will find a toggle button. He will select the button, changing his profile from "Non-Private" to "Private".privatized profile. This will hide his activity from non-followers.
 - Non-functional Aspects:
    - Web Server receives change of privacy request
    - Node.js backend receives request
    - Node.js uses database interface to update values associated with Member
+   
+### 24. Member Unfollows Another Member
+Alex has decided he no longer wants to see Brian's updates on *Members Only* because his posts are annoying. Thankfully, Alex did not invite Brian so he can do this. Alex navigates to Brian's profile page where they select the "Unfollow" button on Brian's page. Alex is then met with a confirmation popup, "Are you sure you want to unfollow **Brian**?". They confirm their choice to unfollow Brian by selecting the "Yes" button. Alex is then redirected to the *Members Only* homepage. Alex can no longer see any of Brian's updates - which he is very happy about. 
 
-### 20. Member Blocks a Follower
-
-Syed wants to block one of his followers that ruining his experience on *Members Only*. Syed will go to their *Members Only* personal page. Syed will then go to their followers list and navigate to the person they are concerned about. Syed will then choose to block this follower, which will disallow them from seeing any of Syed’s information, status updates, posted pictures, or any of Syed’s activities on the site. 
+### 25. Member Blocks Another Member
+Jessica has just broken with Alex, and Alex has been sending threatening messages to Jessica. He won't leave her alone on *Member's Only*. She has decided that it's in her best interest to block Alex. Jessica navigates to Alex's profile page on *Members Only*. She selects the "Block" button on Alex's page, where she is met with a confirmation popup with an optional "Reason For Blocking" textbox. Jessica decides to give the details of her experience in this textbox. She then confirms "Are you sure you want to block **Alex**? **This action cannot be undone.**" Jessica selects the "Yes" confirmation button. She is returned to the *Member's Only* homepage, and all communication between Jessica and Alex is blocked.
 - Non-functional Aspects:
    - Web Server receives block request
    - Node.js backend receives block request
    - Node.js uses blocks data communication between these two Members
 
 ### 21. Member Reports Another Member
-
-Phil wants to report another member on *Members Only* for an offensive action. Phil will go to his personal page and access his followers list, navigating to the person he is concerned with. Phil will then choose the option to report this follower. Phil will then be redirected to a report issue page that contains a form where he will enter the member’s name he is concerned with and other details about why they are being reported. After filling out the form, Phil will select “Submit”, sending the form to the Web Server. This information will then be redirected to Admins so that they can review the report and decide any further action. 
+Phil wants to report another Member on *Members Only* for an offensive action. Phil will navigate to the perpetrator's *Members Only* profile page. He will then select "Report Member". Phil will be redirected to a webpage with a textbox where Phil will enter the details of his report. Phil will then select "Submit". The details of the report will be forwarded to the Administrators of *Members Only* for further review.
 - Non-functional Aspects:
    - Web Server receives block request
    - Node.js backend receives block request
@@ -211,7 +208,6 @@ Phil wants to report another member on *Members Only* for an offensive action. P
    - Node.js sends report to Admins
 
 </details>
-
 
 <details>
 <summary>Admin</summary>
