@@ -53,6 +53,34 @@ Alex will follow the posting photos process. Alex will then click add content. A
 Member Removes Sponsored Content<br>
 Alex will go to their photo with added content. Alex will select options and be given an option to remove content from the photo. Alex will be shown what is added content in their photo such that they can navigate to it and choose to remove it. Alex will submit their changes. The Web Server will receive the request and send it to backend services. Backend services will process and post the request. Backend services will save image to the database. Admins can use image to add/remove/etc. Original poster will not be able to see these changes. 
 
+### Member Logs in to Members Only
+
+Johnson wants to login in to Members Only and check his feed. To do this, Johnson will navigate to the Members Only homepage, which includes a login for existing users form. Johnson will enter his email address and password associated with his Members Only account. Johnson will then select LOGIN at the bottom of the form. If his email and password are correct, he will then be redirected to his Members Only feed. 
+
+### Member Forgets Password or Inputs Invalid Password
+
+Johnson wants to login to Members Only, but he is stuck at the login form on the homepage of the site because he has forgotten the correct password associated with his account. Johnson will then select a link that says, “Forgot Password”. This will redirect him to a different form on the Members Only site where he will fill out his email and several other details associated with his account such as his name. Johnson will then be sent an email that sends him a new temporary password to login to his account. Johnson can then reset his password once he logs back into his account and accesses his settings. 
+
+### MEMBER FORGOT EMAIL / INPUTS INVALID EMAIL
+
+Johnson directs himself to the Members Only homepage and tries to login to his account. However, Johnson has somehow forgotten the email associated with his Members Only account. After entering his information, Johnson will click submit. The system will receive the email and attempt to verify who Johnson is, however because it is the incorrect email Johnson will be denied access to Members Only until he can recall the correct email address associated with his account. 
+
+### Member Changes Password
+
+Larry wants to change his password, either for security reasons or because he just logged in with a temporary password because he forgot his previous one. Larry will navigate to the SETTINGS portion of his account after immediately logging in. Larry will then navigate and choose the CHANGE PASSWORD option. Larry will be brought to a separate, private form where he will be prompted to enter a new password. After entering the new password, Larry will be prompted to enter it a second time as to confirm the password and eliminate the possibility of any typos. Larry will then click CONFIRM and the system will verify that the passwords are identical. If they are, then Larry will be redirected back to his Members Only feed. Otherwise, Larry will be prompted to enter and reenter the new password again until he successfully enters the same password twice. 
+
+### Member Changes Visibility Settings 
+
+Danny wants to hide his activity from non-followers on Members Only. To do this, Danny will go to his personal page and access the SETTINGS portion of the page. Danny will then navigate to the toggle button which allows them to switch between a privatized and un-privatized profile. Since Danny wants to privatize his page, he will select this toggle button to the on setting, effectively hiding his activity from non-followers. 
+
+### Member Blocks a Follower
+
+Syed wants to block one of his followers that ruining his experience on Members Only. Syed will go to their Members Only personal page. Syed will then go to their followers list and navigate to the person they are concerned about. Syed will then choose to block this follower, which will disallow them from seeing any of Syed’s information, status updates, posted pictures, or any of Syed’s activities on the site. 
+
+### Member Reports Another Member
+
+Phil wants to report another member on Members Only for an offensive action. Phil will go to his personal page and access his followers list, navigating to the person he is concerned with. Phil will then choose the option to report this follower. Phil will then be redirected to a report issue page that contains a form where he will enter the member’s name he is concerned with and other details about why they are being reported. After filling out the form, Phil will click SUBMIT, sending the form to the Web Server. This information will then be redirected to Admins so that they can review the report and decide any further action. 
+
 
 </details>
 
