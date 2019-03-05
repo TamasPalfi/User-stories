@@ -54,6 +54,29 @@
 
 - Much more query features of SQL than MySQL.
 
+***Our Preliminary Fields and their Associated Values***
+<details>
+    <summary>Member</summary>
+    - email
+    - password
+</details>
+
+<details>
+    <summary>Post</summary>
+</details>
+
+<details>
+    <summary>Comments</summary>
+</details>
+
+<details>
+    <summary>Photos</summary>
+</details>
+
+<details>
+    <summary>Filtered Photos</summary>
+</details>
+
 ### Application Map
 
 ![](done.jpg)
