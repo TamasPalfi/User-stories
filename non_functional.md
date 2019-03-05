@@ -16,29 +16,30 @@
 ***Node.js***
 
 - Since we already decided to use JavaScript(React.js) for frontend, it’s a no-brainer to pick Node.js(Javascript).
+
 - Google JavaScript engine. Translation: fast and scalable web apps in a result.
+
 - Thanks to this popularity, a vicious cycle is set up: your favorite API might only offer an official Node.js library, and other languages are not even considered, left for unofficial packages 
 
 
 ### Credit Card Software 
 ***Stripe.js*** 
 - In keeping with their principle of simplicity and convenience, pricing is 2.9% + $.30 per successful transaction.
+
 -  There are extremely readable documentations and code samples to do efficient custom integration. 
+
 - If developers want to test the application before making it live, they simply hit the “test” button. In comparison, PayPal makes developers set up a sandbox account and log in and out of different vendor and seller accounts.
 
 ### Automated Email 
 ***Sendgrid***
 
-- Deliverability. 
-- Avoids emails going to spam folder/rejection by mail server.  
-- Throughput. 
-- Handles large volumes. 
-- Analytics and Transparency 
-- Tracks email performance, read, etc. 
-- Verifies whether email has reached destination. 
-- OptOuts 
-- Ability to prevent mailing to certain addresses in a separate layer, rather than relying on applications. 
-- Simple integration with node.js. 
+- Deliverability. : Avoids emails going to spam folder/rejection by mail server.  
+
+- Easy integration with a dead simple API.
+
+- Track email performance, reads, etc and verify whether emails have reached their destination and verifies whether email has reached destination. 
+
+- Ability to prevent mailing to certain addresses in a separate layer, rather than relying on applications.
 
 ### Database 
 ***PostgreSQL***
