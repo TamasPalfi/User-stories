@@ -21,18 +21,17 @@ Administrators are our next *enhanced* Member. First and foremost, we have admin
 <details>
 <summary>New Members</summary>
  
-### 1. New Member Creates Account
-
-Josh receives sent a link from a friend to join *Members Only*. Naturally, Josh is very excited and is eager to join the site. Josh finds the link in an email from *Members Only* and selects it. He is now brought to a *Members Only* webpage that asks him to confirm if he wants to join *Members Only*. Josh will of course select yes on joining *Members Only*. After accepting, he will be brought to a Sign Up page on the website. Josh will have to fill out a form will personal information such as First Name, Last Name, Street Address, City/Town, Zip Code, Country (U.S. only to start), Email Address, and a Password. Josh will then select a box which says that he accepts the Terms and Conditions of *Members Only*. Finally, Josh will submit this form, and he will be sent a confirmation email about joining *Members Only*. Josh will go to this email, select the account confirmation link, effectively finalizing the creation of his account and bringing him to his own *Members Only* account. Afterwards, Josh will be sent a credit card charge that he will have to verify on the site to confirm that he says he is. 
+### 1. New Member Signs Up For *Members Only* From Invitation Link
+Josh receives a link from a friend to join *Members Only*. Naturally, Josh is very excited and is eager to join the site. Josh finds the link in an email from *Members Only* and selects it. He is now brought to a *Members Only* webpage that asks him to confirm that he wants to join *Members Only*. Josh selects the "Yes" button, confirming he wants to join *Members Only*. Upon accepting, he is brought to a Sign Up webpage. The page consists ofa form, with required fields of: First Name, Last Name, Street Address, City/Town, Zip Code, Country (U.S. only), Email Address, and a Password. Josh will then select a checkbox confirming that he accepts the Terms and Conditions of *Members Only*. Finally, Josh will select the "Submit" button, and he is sent a confirmation email to confirm his sign up at *Members Only*. Josh will need to go to this email and select the account confirmation link, finalizing the creation of his account and bringing him to his own *Members Only* account webpage. In order to continue use of *Members Only*, Josh will need to enter his credit card details and confirm a charge. 
  - Non-Functional Aspects:
    - Web Server receives form submission
    - Web Server sends to Node.js backend
    - Node.js backend sends automated email
    - Member's data get sends to database through interface calls
 
-### 2. New Member Signs Up With Code
+### 2. New Member Signs Up For *Members Only* From Invitation Code
 
-Brianna manages to get her hands on an invitation code to *Members Only* from one of her favorite idols. To use this, Brianna navigates to the *Members Only* site and is brought to the login page. Since Brianna doesn’t currently have an account, she will have to choose the option to sign up with a code. After selecting this, Brianna will be brought to a new web page where she will be asked to enter her code. Brianna will enter the code and then hit a submit button. Afterwards, she will be brought through the same account creation process as described previously. 
+Brianna manages to get her hands on an invitation code to *Members Only* from one of her favorite Idols. To use this, Brianna navigates to the *Members Only* site and is brought to the Login page. Brianna will select "Sign Up With Invitation Code". Upon selecting this, Brianna is brought to a new webpage where she is asked to enter her code. Brianna will enter the code correctly and then select a "Submit" button. Afterwards, she will be brought through the same account creation process as described previously. 
  - Non-Functional Aspects:
    - Web Server receives form submission
    - Web Server sends to Node.js backend
@@ -86,14 +85,14 @@ Alex will login to their profile. Alex will navigate to their settings page on t
 
 ### 7. Member Fails to Confirm Tri-Monthly Credit Card Charge
 
-System will tell the credit card software it is time to charge Alex. Credit card system will charge member a random amount between $0.20 and $0.40. System will send automated email at specified time period telling member to validate the charge made to their account. Email will include a link that will direct the user to the page to enter the amount charged. System will start a timer for 3 days. Alex will login to their personal bank account and check for the charge from *Members Only*. Alex will select the link provided in email. Alex will be redirected to the webpage with a form where they can enter the amount they were charged by the system. Alex will fill in the text box with that amount. Alex will hit the “Submit form” button. Webserver will receive this information and back end services will process it. System will compare this amount to the amount that was charged. If right, member will be directed back to the *Members Only* home page. If wrong, member will be blocked out of *Members Only* until they enter the right amount.
+System will tell the credit card software it is time to charge Alex. Credit card system will charge member a random amount between $0.20 and $0.40. System will send automated email at specified time period telling member to validate the charge made to their account. Email will include a link that will direct the user to the page to enter the amount charged. System will start a timer for 4 days. Alex will login to their personal bank account and check for the charge from *Members Only*. Alex will select the link provided in email. Alex will be redirected to the webpage with a form where they can enter the amount they were charged by the system. Alex will fill in the text box with that amount. Alex will hit the “Submit form” button. Webserver will receive this information and back end services will process it. System will compare this amount to the amount that was charged. If right, member will be directed back to the *Members Only* home page. If wrong, member will be blocked out of *Members Only* until they enter the right amount.
 - Non-Functional Aspects:
    - Node.js backend sends automated credit card charge using Stripe.js
    - Web Server receives charge amount input
    - Node.js receives input and validates it is the same as amount charged
 
 ### 8. Member Fails to Enter Correct Charge Before Expiration
-Alex does not enter the correct charge amount before expiration (3 days), and is blocked from using *Members Only*. When Alex tries to access *Members Only*, they are directed to a page asking to send an additional charge. Alex selects "Confirm" button. Alex's credit card is charged a random amount between $0.20 and $0.45. Alex receives another email and selects the link within the email. They are redirected to *Member's Only* where they enter the correct charge amount. Alex's use of *Members Only* is restored.
+Alex does not enter the correct charge amount before expiration (4 days), and is blocked from using *Members Only*. When Alex tries to access *Members Only*, they are directed to a page asking to send an additional charge. Alex selects "Confirm" button. Alex's credit card is charged a random amount between $0.20 and $0.45. Alex receives another email and selects the link within the email. They are redirected to *Member's Only* where they enter the correct charge amount. Alex's use of *Members Only* is restored.
 - Non-Functional Aspects:
    - Node.js backend sends automated credit card charge using Stripe.js
    - Web Server receives charge amount input
