@@ -290,8 +290,4 @@ Alex, a Member, performs specific expected actions. The frontend detects an item
 ### 37. System Converts URL to Shortened URL 
 The frontend sends the request to a backend. Frontend sends a request to the backend with original URL information. The backend receives the request and uses a hash function to generate a shortened URL. The System saves the shortened URL into the database. The System sends the shortened URL to the frontend. In the case of the system cannot perform shortening, it will use the original URL. 
 
-### PLEASE FIX 
-The backend receives a request from the frontend. The backend sent a request to the credit card company using a credit card software.
-If the credit card is denied, the system freezes the member’s account and changes the permission of the member in a database. 
-If the request is successful, the database finds the matched member and takes a point off. Then the system sends updated point information to the frontend. The frontend updates the point information in a local storage and Alex will recoginize the changes.
 </details>
