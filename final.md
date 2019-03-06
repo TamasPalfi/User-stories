@@ -210,7 +210,7 @@ Phil wants to report another Member on *Members Only* for an offensive action. P
    - Node.js uses blocks data communication between these two Members
    - Node.js sends report to Admins
 
-## ***Admin***
+## ***Administrators***
 
 ### 25. Administrator Removes Member's Access to *Members Only*
 Administrator Ava is working through checking the flagged content on the *Members Only* and she encounters the profile of Jonas (a Member) who was flagged for posting inappropriate content.  Ava directs herself to view Jonas’s profile. From there, she may review all the flagged content on his profile and come to a conclusion on whether or not Jonas should be removed or not from *Members Only*.  Ava concludes that Jonas must be removed for violating the site’s posting policy. She selects the “Remove Member” button via the Jonas' profile page, with a confirmation window pop-up. She selects "Confirm. Jonas is removed from *Members Only* and his content is no longer viewable. Jonas receives an email notifying him of this action.
@@ -236,7 +236,7 @@ Administrator Andrew wants to make *Members Only* more visually pleasing. He dec
    - Node.js backend uses database interface to update filtered photo table with new photo
 
 
-## ***Idol***
+## ***Idols***
 
 ### 28. Idol Has All Privileges of a Member
 Tony loves using *Members Only*, and as a popular social media figure, he has the designation as an Idol. Due to this, he has all the privileges of a Member [SEE # 6-24].  Additionally, he has access to unlimited invitations and unlimited invitation codes. Notably, he also has unlimited *Members Only* points.
