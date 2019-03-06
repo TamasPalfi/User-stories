@@ -1,4 +1,4 @@
- # What is *Members Only*?
+# What is *Members Only*?
 *Members Only* is a social media site where users, known as Members, can post statuses, photos, links, and everything else that one may post on another social media outlet. What makes *Members Only* different you may ask? Exclusivity. Not just anyone can join *Members Only*. You must receive an invitation from another Member or be lucky enough to receive an entrance code from one of our Idols. This makes *Members Only* a gated community, where we can house exactly the people that we want to be on the site. This is formulated and handpicked data, which can, and will, be used for a multitude of profitable purposes. 
 
 # The Pillars of *Members Only*
@@ -49,7 +49,7 @@ Upon successful creation of her account, Catherine will need to enter her credit
    - Member's data get sends to database through interface calls
 
 ### 5. New Member Confirms Credit Card Charge
-After Catherine successfully confirms her credit card information, she will be charged a random amount between $0.20 and $0.45 that she will need to confirm on the *Members Only*. Catherine will receive an email shortly after submitting her credit details, notifying her that her credit card has been charged for the first time. Catherine will need to confirm the amount charged by *Members Only*. After confirming the charge, Catherine will navigate to the notification email from *Members Only*. Catherine will select the hyperlink in the email, bringing her to a form with an entry field for the value of the charge. Catherine will then enter the correct charge amount and select "Submit". Upon submitting the correct amount, she is brought back to her *Members Only* page as a verified Member. Otherwise, she will be asked to resubmit the correct amount she was charged and will be locked out after 3 failed attempts.
+After Catherine successfully confirms her credit card information, she will be charged a random amount between $0.50 and $0.80 that she will need to confirm on the *Members Only*. Catherine will receive an email shortly after submitting her credit details, notifying her that her credit card has been charged for the first time. Catherine will need to confirm the amount charged by *Members Only*. After confirming the charge, Catherine will navigate to the notification email from *Members Only*. Catherine will select the hyperlink in the email, bringing her to a form with an entry field for the value of the charge. Catherine will then enter the correct charge amount and select "Submit". Upon submitting the correct amount, she is brought back to her *Members Only* page as a verified Member. Otherwise, she will be asked to resubmit the correct amount she was charged and will be locked out after 3 failed attempts.
  - Non-Functional Aspects:
    - Node.js backend sends automated credit card charge using Stripe.js
    - Web Server receives charge amount input
@@ -71,14 +71,14 @@ Alex must be logged into *Members Only*. From the homepage, he will select "Sett
    - Node.js backend accesses database through interface calls to update information associated with particular Member
 
 ### 8. Member Confirms Tri-Monthly Credit Card Charge
-Every 3 months, Alex will receive a random credit card charge between the amounts $0.20 and $0.45. He will receive an automated email at specified time period asking him to validate the charge made to his account. He will then select the link within the email. For confirming a credit card charge [SEE # 5]. This must be done within 4 days of receiving the original email. If done correctly, Alex will be able to continue using *Members Only* until his next Tri-Monthly charge.
+Every 3 months, Alex will receive a random credit card charge between the amounts $0.50 and $0.80. He will receive an automated email at specified time period asking him to validate the charge made to his account. He will then select the link within the email. For confirming a credit card charge [SEE # 5]. This must be done within 4 days of receiving the original email. If done correctly, Alex will be able to continue using *Members Only* until his next Tri-Monthly charge.
 - Non-Functional Aspects:
    - Node.js backend sends automated credit card charge using Stripe.js
    - Web Server receives charge amount input
    - Node.js receives input and validates it is the same as amount charged
 
 ### 9. Member Fails to Confirm Tri-Monthly Charge Before Expiration
-Alex does not enter the correct charge amount before expiration (4 days), and is blocked from using *Members Only*. When Alex tries to access *Members Only*, they are directed to a page asking to send an additional charge. Alex selects "Confirm" button. Alex's credit card is charged a random amount between $0.20 and $0.45. Alex receives another email and selects the link within the email. They are redirected to *Member's Only* where they enter the correct charge amount. Alex's use of *Members Only* is restored.
+Alex does not enter the correct charge amount before expiration (4 days), and is blocked from using *Members Only*. When Alex tries to access *Members Only*, they are directed to a page asking to send an additional charge. Alex selects "Confirm" button. Alex's credit card is charged a random amount between $0.50 and $0.80. Alex receives another email and selects the link within the email. They are redirected to *Member's Only* where they enter the correct charge amount. Alex's use of *Members Only* is restored.
 - Non-Functional Aspects:
    - Node.js backend sends automated credit card charge using Stripe.js
    - Web Server receives charge amount input
@@ -274,7 +274,7 @@ Alex, a Member, performs specific expected actions. The frontend detects an item
 The frontend sends the request to a backend. Frontend sends a request to the backend with original URL information. The backend receives the request and uses a hash function to generate a shortened URL. The System saves the shortened URL into the database. The System sends the shortened URL to the frontend. In the case of the system cannot perform shortening, it will use the original URL.
 
 ### 38. System Bills Customer 
-Initial System billing upon Member confirmation of credit card details [SEE # 4]. System billing also triggered upon Member updating credit card information [SEE # 7]. Further billings occur in tri-monthly frequency [SEE # 8] All billings by System occur randomly between amounts $.20-$.45. 
+Initial System billing upon Member confirmation of credit card details [SEE # 4]. System billing also triggered upon Member updating credit card information [SEE # 7]. Further billings occur in tri-monthly frequency [SEE # 8] All billings by System occur randomly between amounts $.50-$.80. 
 
 <center><h1><b>Non-Functional Requirements</b></h1></center>
 
