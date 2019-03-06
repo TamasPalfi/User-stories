@@ -107,15 +107,15 @@ Alex sees their friend’s status on their profile feed. Alex will select the "C
 
 ### 12. Member Invites a Potential New Member to *Members Only*
 Alex navigates to the “Invite New Member” button on the *Members Only* homepage to invite his friend Marisa. He will be redirected to a new webpage with a form, with required fields of potential New Member's valid email address, name, and optional dropdown menu of "How You Know This Person". He will then fill in the required fields with Marisa's details, and select "Submit". 1000 points are removed from Alex's account. 
-- Non-functional Aspects
-   - Web Server receives request to send a new invitation link
-   - Node.js backend processes request and sends an automated email with link
-   - Node.js backend keeps track of how long invitation has been out for
    
 #### 12a. Potential New Member Accepts Invitation
 Marisa receives an email from *Members Only* to join. She selects the hyperlink in the email, and is brought to a webpage asking to confirm joing *Members Only*. She selects "Yes". For signup details [SEE #1]. Alex receives 50 points. 
 #### 12b. Potential New Member Lets Invitation Link Expire
 Marisa receives an email from *Members Only* to join. She does not see the email, or does not want to join *Members Only*. After 4 days, the link expires. Alex loses an additional 100 points. 
+- Non-functional Aspects
+   - Web Server receives request to send a new invitation link
+   - Node.js backend processes request and sends an automated email with link
+   - Node.js backend keeps track of how long invitation has been out for
 
 ### 13. Member Posts Photo to Profile
 From their profile page, Alex selects "Post Photo". Alex is met with a popup window, where he navigates to the photo he wishes to post. He confirms the photo, and is able to enter additional text to the post within a textbox. Once complete, Alex selects "Post".
@@ -162,6 +162,10 @@ homepage of *Members Only*.
 After hitting confirm, the web server receives the report. The web server sends the report to
 backend services. Backend services will process the report, and send to Administrators for
 further action.
+- Non-functional Aspects:
+   - Web Server receives report that photo was flagged for illicit content
+   - Node.js backend receives report from Web Server
+   - Node.js backend sends report and photo to Admins for further action
 
 ### 18. Member Forgets Password/Inputs Invalid Password
 Johnson wants to log into *Members Only*, but has forgotten his password. He will select the button "Forgot Password". This will redirect him to a different form on the *Members Only* website where he will fill enter the required fields of his email address and full name. Johnson will then be sent an email with a link to reset his password. Johnson will select the link, and be redirected to a *Members Only* webpage. He will be required to enter a new password in one textbox, and confirm his password in a second textbox. He will then select "Submit". If the passwords match, Johnson's password is successfully changed and he is redirected to a webpage confirming successful password change. 
@@ -191,6 +195,10 @@ Danny wants to hide his activity from non-followers on *Members Only*. To do thi
    
 ### 22. Member Unfollows Another Member
 Alex has decided he no longer wants to see Brian's updates on *Members Only* because his posts are annoying. Thankfully, Alex did not invite Brian so he can do this. Alex navigates to Brian's profile page where they select the "Unfollow" button on Brian's page. Alex is then met with a confirmation popup, "Are you sure you want to unfollow **Brian**?". They confirm their choice to unfollow Brian by selecting the "Yes" button. Alex is then redirected to the *Members Only* homepage. Alex can no longer see any of Brian's updates - which he is very happy about. 
+- Non-functional Aspects:
+   - Web Server receives unfollow request
+   - Node.js backend is handed unfollow request from Web Server
+   - Node.js disassociates these two Members from one another, hiding their separate activities from each other
 
 ### 23. Member Blocks Another Member
 Jessica has just broken with Alex, and Alex has been sending threatening messages to Jessica. He won't leave her alone on *Members Only*. She has decided that it's in her best interest to block Alex. Jessica navigates to Alex's profile page on *Members Only*. She selects the "Block" button on Alex's page, where she is met with a confirmation popup with an optional "Reason For Blocking" textbox. Jessica decides to give the details of her experience in this textbox. She then confirms "Are you sure you want to block **Alex**? **This action cannot be undone.**" Jessica selects the "Yes" confirmation button. She is returned to the *Members Only* homepage, and all communication between Jessica and Alex is blocked.
