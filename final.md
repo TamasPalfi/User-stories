@@ -1,6 +1,6 @@
 <center><h1><b>What is Members Only?</b></h1></center>
 
-*Members Only* is a social media site where users, known as Members, can post statuses, photos, links, and everything else that one may post on another social media outlet. So what makes *Members Only* different you may ask? Exclusivity. Not just anyone can join *Members Only*. You must receive an invitation from another Member or be lucky enough to receive an entrance code from one of our Idols. This makes *Members Only* a gated community, where we can house exactly the people that we want to be on the site. This is formulated and handpicked data, which can, and will, be used for a multitude of profitable purposes. 
+*Members Only* is a social media site where users, known as Members, can post statuses, photos, links, and everything else that one may post on another social media outlet. What makes *Members Only* different you may ask? Exclusivity. Not just anyone can join *Members Only*. You must receive an invitation from another Member or be lucky enough to receive an entrance code from one of our Idols. This makes *Members Only* a gated community, where we can house exactly the people that we want to be on the site. This is formulated and handpicked data, which can, and will, be used for a multitude of profitable purposes. 
 
 # The Pillars of *Members Only*
 
@@ -21,7 +21,7 @@ Administrators are our next *enhanced* Member. First and foremost, we have admin
 ## ***New Members***
  
 ### 1. New Member Signs Up For *Members Only* From Invitation Link
-Josh receives a link from a friend to join *Members Only*. Naturally, Josh is very excited and is eager to join the site. Josh finds the link in an email from *Members Only* and selects it. He is now brought to a *Members Only* webpage that asks him to confirm that he wants to join *Members Only*. Josh selects the "Yes" button, confirming he wants to join *Members Only*. Upon accepting, he is brought to a Sign Up webpage. The page consists ofa form, with required fields of: First Name, Last Name, Street Address, City/Town, Zip Code, Country (U.S. only), Email Address, and a Password. Josh will then select a checkbox confirming that he accepts the Terms and Conditions of *Members Only*. Finally, Josh will select the "Submit" button, and he is sent a confirmation email to confirm his sign up at *Members Only*. Josh will need to go to this email and select the account confirmation link, finalizing the creation of his account and bringing him to his own *Members Only* account webpage. In order to continue use of *Members Only*, Josh will need to enter his credit card details and confirm a charge. 
+Josh receives a link from a friend to join *Members Only*. Naturally, Josh is very excited and is eager to join the site. Josh finds the link in an email from *Members Only* and selects it. He is now brought to a *Members Only* webpage that asks him to confirm that he wants to join *Members Only*. Josh selects the "Yes" button, confirming he wants to join *Members Only*. Upon accepting, he is brought to a Sign-Up webpage. The page consists of a form, with required fields of: First Name, Last Name, Street Address, City/Town, Zip Code, Country (U.S. only), Email Address, and a Password. Josh will then select a checkbox confirming that he accepts the Terms and Conditions of *Members Only*. Finally, Josh will select the "Submit" button, and he is sent a confirmation email to confirm his sign up at *Members Only*. Josh will need to go to this email and select the account confirmation link, finalizing the creation of his account and bringing him to his own *Members Only* account webpage. In order to continue use of *Members Only*, Josh will need to enter his credit card details and confirm a charge. 
  - Non-Functional Aspects:
    - Web Server receives form submission
    - Web Server sends to Node.js backend
@@ -50,7 +50,7 @@ Upon successful creation of her account, Catherine will need to enter her credit
    - Member's data get sends to database through interface calls
 
 ### 5. New Member Confirms Credit Card Charge
-After Catherine successfully confirms her credit card information, she will be charged a random amount between $0.20 and $0.45 that she will need to confirm on the *Members Only*. Catherine will receive an email shortly after submitting her credit details, notifying her that her credit card has been charged for the first time. Catherine will need to confirm the amount charged by *Members Only*. After confirming the charge, Catherine will navigate to the notification email from *Members Only*. Catherine will select the hyperlink in the email, bringing her to a form with an entry field for the value of the charge. Catherine will then enter the correct charge amount and select "Submit". Upon submitting the correct amount, she is brought back to her *Members Only* page as a verified Member. Otherwise, she will be asked to resubmit the correct amount she was charged, and will be locked out after 3 failed attempts.
+After Catherine successfully confirms her credit card information, she will be charged a random amount between $0.20 and $0.45 that she will need to confirm on the *Members Only*. Catherine will receive an email shortly after submitting her credit details, notifying her that her credit card has been charged for the first time. Catherine will need to confirm the amount charged by *Members Only*. After confirming the charge, Catherine will navigate to the notification email from *Members Only*. Catherine will select the hyperlink in the email, bringing her to a form with an entry field for the value of the charge. Catherine will then enter the correct charge amount and select "Submit". Upon submitting the correct amount, she is brought back to her *Members Only* page as a verified Member. Otherwise, she will be asked to resubmit the correct amount she was charged and will be locked out after 3 failed attempts.
  - Non-Functional Aspects:
    - Node.js backend sends automated credit card charge using Stripe.js
    - Web Server receives charge amount input
@@ -65,7 +65,7 @@ Johnson wants to log into *Members Only* and check his feed. To do this, Johnson
    - Node.js backend receives login request and validates credentials
 
 ### 7. Member Updates Credit Card Information
-Alex must be logged into *Members Only*. From the homepage, he will select "Settings" and be redirected to a *Members Only* webpage. He will then select "Change Payment Details". Alex will now need to confirm his new credit card details [SEE #4]. He will also need to confirm a credit charge [SEE #5].
+Alex must be logged into *Members Only*. From the homepage, he will select "Settings" and be redirected to a *Members Only* webpage. He will then select "Change Payment Details". Alex will now need to confirm his new credit card details [SEE # 4]. He will also need to confirm a credit charge [SEE # 5].
  - Non-Functional Aspects:
    - Web Server receives form submission
    - Web Server sends to Node.js backend
@@ -104,7 +104,7 @@ Alex sees their friend’s status on their profile feed. Alex will select the "C
 Alex navigates to the “Invite New Member” button on the *Members Only* homepage to invite his friend Marisa. He will be redirected to a new webpage with a form, with required fields of potential New Member's valid email address, name, and optional dropdown menu of "How You Know This Person". He will then fill in the required fields with Marisa's details, and select "Submit". 1000 points are removed from Alex's account. 
    
 #### 12a. Potential New Member Accepts Invitation
-Marisa receives an email from *Members Only* to join. She selects the hyperlink in the email, and is brought to a webpage asking to confirm joing *Members Only*. She selects "Yes". For signup details [SEE #1]. Alex receives 50 points. 
+Marisa receives an email from *Members Only* to join. She selects the hyperlink in the email, and is brought to a webpage asking to confirm joing *Members Only*. She selects "Yes". For signup details [SEE # 1]. Alex receives 50 points. 
 #### 12b. Potential New Member Lets Invitation Link Expire
 Marisa receives an email from *Members Only* to join. She does not see the email, or does not want to join *Members Only*. After 4 days, the link expires. Alex loses an additional 100 points. 
 - Non-functional Aspects
@@ -113,7 +113,7 @@ Marisa receives an email from *Members Only* to join. She does not see the email
    - Node.js backend keeps track of how long invitation has been out for
 
 ### 13. Member Posts Photo to Profile
-From their profile page, Alex selects "Post Photo". Alex is met with a popup window, where he navigates to the photo he wishes to post. He confirms the photo, and is able to enter additional text to the post within a textbox. Once complete, Alex selects "Post".
+From their profile page, Alex selects "Post Photo". Alex is met with a popup window, where he navigates to the photo he wishes to post. He confirms the photo and is able to enter additional text to the post within a textbox. Once complete, Alex selects "Post".
 - Non-functional Aspects:
    - Web Server receives new post and photo
    - Node.js backend receives post information and posts it
@@ -163,7 +163,7 @@ further action.
    - Node.js backend sends report and photo to Admins for further action
 
 ### 18. Member Forgets Password/Inputs Invalid Password
-Johnson wants to log into *Members Only*, but has forgotten his password. He will select the button "Forgot Password". This will redirect him to a different form on the *Members Only* website where he will fill enter the required fields of his email address and full name. Johnson will then be sent an email with a link to reset his password. Johnson will select the link, and be redirected to a *Members Only* webpage. He will be required to enter a new password in one textbox, and confirm his password in a second textbox. He will then select "Submit". If the passwords match, Johnson's password is successfully changed and he is redirected to a webpage confirming successful password change. 
+Johnson wants to log into *Members Only* but has forgotten his password. He will select the button "Forgot Password". This will redirect him to a different form on the *Members Only* website where he will fill enter the required fields of his email address and full name. Johnson will then be sent an email with a link to reset his password. Johnson will select the link and be redirected to a *Members Only* webpage. He will be required to enter a new password in one textbox and confirm his password in a second textbox. He will then select "Submit". If the passwords match, Johnson's password is successfully changed, and he is redirected to a webpage confirming successful password change. 
 - Non-functional Aspects:
    - Web Server receives form submission
    - Node.js backend receives login request and rejects credentials
@@ -182,7 +182,7 @@ Larry wants to change his password, for security reasons. Larry will select "Set
    - Node.js uses database interface to update values associated with Member
 
 ### 21. Member Changes Visibility Settings 
-Danny wants to hide his activity from non-followers on *Members Only*. To do this, Danny will select the "Settings" buttom from any *Members Only* webpage. From here, he will select "Visibility" where he will find a toggle button. He will select the button, changing his profile from "Non-Private" to "Private".privatized profile. This will hide his activity from non-followers.
+Danny wants to hide his activity from non-followers on *Members Only*. To do this, Danny will select the "Settings" button from any *Members Only* webpage. From here, he will select "Visibility" where he will find a “Toggle” button. He will select the “Toggle” button, changing his profile from "Non-Private" to "Private". This will hide his activity from non-followers.
 - Non-functional Aspects:
    - Web Server receives change of privacy request
    - Node.js backend receives request
@@ -220,14 +220,14 @@ Administrator Ava is working through checking the flagged content on the *Member
    - Node.js disallows Member's credentials to be used to login
 
 ### 26. Administrator Removes Content Flagged as Inappropriate/Illegal
-Administrator Ava is working through checking the flagged content on *Members Only* and receives a report of inappropriate content in the form of a flagged photo. Ava directs herself to review the flagged photo, and she must come to a conclusion on whether the photo should be removed or not. She deems the content inappropriate/illegal, and proceeds to remove the photo. She selects the “Remove Post/Photo” button on the webpage of the photo, causing a confirmation popup to occur. She selects "Confirm", and the content is removed from *Members Only*.
+Administrator Ava is working through checking the flagged content on *Members Only* and receives a report of inappropriate content in the form of a flagged photo. Ava directs herself to review the flagged photo, and she must conclude on whether the photo should be removed or not. She deems the content inappropriate/illegal and proceeds to remove the photo. She selects the “Remove Post/Photo” button on the webpage of the photo, causing a confirmation popup to occur. She selects "Confirm", and the content is removed from *Members Only*.
 - Non-functional Aspects:
    - Web Server receives removal request
    - Node.js backend receives removal request
    - Node.js uses database interface to remove data from the site
 
 ### 27. Administrator Edits Member's Photo
-Administrator Andrew wants to make *Members Only* more visually pleasing. He decides he wants to edit a member’s photo to add a filter in the hopes that it would increase web traffic to the site. First, Andrew directs himself to the webpage containing the photo he wants to edit, on Member Curtis' page. He proceeds to edit the photo [SEE #14-16]. After making the necessary revisions, he selects the "Confirm" button, altering the photo. Curtis will not see the changed content on his own profile but rather what he originally posted - while all other Members of *Members Only* will see the altered photo.
+Administrator Andrew wants to make *Members Only* more visually pleasing. He decides he wants to edit a Member’s photo to add a filter in the hopes that it would increase web traffic to the site. First, Andrew directs himself to the webpage containing the photo he wants to edit, on Member Curtis' page. He proceeds to edit the photo [SEE #14-16]. After making the necessary revisions, he selects the "Confirm" button, altering the photo. Curtis will not see the changed content on his own profile but rather what he originally posted - while all other Members of *Members Only* will see the altered photo.
 - Non-functional Aspects:
    - Web Server receives new post and photo
    - Node.js backend receives post information and posts it
@@ -239,10 +239,10 @@ Administrator Andrew wants to make *Members Only* more visually pleasing. He dec
 ## ***Idol***
 
 ### 28. Idol Has All Privileges of a Member
-Tony loves using *Members Only*, and as a popular social media figure, he has the designation as an Idol. Due to this, he has all the privileges of a Member [SEE# 6-24].  Addtionally, he has access to unlimited invitations and unlimited invitation codes. Notably, he also has unlimited *Members Only* points.
+Tony loves using *Members Only*, and as a popular social media figure, he has the designation as an Idol. Due to this, he has all the privileges of a Member [SEE # 6-24].  Additionally, he has access to unlimited invitations and unlimited invitation codes. Notably, he also has unlimited *Members Only* points.
 
 ### 29. Idol Invites a New Member
-Tony, an Idol, wants to contribute to the web sites overall Member base count by inviting new members to the site.  He does this to increase the web traffic to *Members Only* and increase his own revenue. As a Member, he may send an invitation via email [SEE# 12]. The alternate mode of invitation is via invitation code. Tony may receive invitation codes by selecting "Invitation Code Generation", which will generate a new random invitation code that is valid for 30 days.
+Tony, an Idol, wants to contribute to the web sites overall Member base count by inviting new members to the site.  He does this to increase the web traffic to *Members Only* and increase his own revenue. As a Member, he may send an invitation via email [SEE # 12]. The alternate mode of invitation is via invitation code. Tony may receive invitation codes by selecting "Invitation Code Generation", which will generate a new random invitation code that is valid for 30 days.
 - Non-functional Aspects
    - Web Server receives request to send a new invitation link
    - Node.js backend processes request and sends an automated email with link
@@ -253,14 +253,11 @@ Idols are the **faces** of *Members Only*, and as such need to be highly visible
 
 ## ***System***
 
-### The system deducts a point to the member  
-The backend receives a request containing the user information from the frontend. The server finds the matched member data in the database and takes a point off. Then the system sends updated point information to the frontend. The frontend updates the point information in a local storage ,and Alex will recoginize the changes.
-
 ### 31. System Deducts Points From Member  
-Alex, a Member, invites a potential New Member (or invitation failed, etc.). The backend receives request, and the database finds the matched Member information in database and updates the matched member's information. The system sends updated point information to the frontend. The system updates the point information in local storage and Alex will see the changes immediately. 
+Alex, a Member, invites a potential New Member (or invitation failed, etc.). The backend receives request, and the database finds the matched Member information in database and updates the matched Member’s information. The system sends updated point information to the frontend. The system updates the point information in local storage and Alex will see the changes immediately. 
 
 ### 32. System Awards Points To Member  
-Alex's invitation is accepted or he makes positive actions (posts photo, comment). The backend receives request. The database finds the matched Member information in database and updates the matched member's information. The system sends updated point information to the frontend. The system updates the point information in local storage and Alex will see the changes immediately. 
+Alex's invitation is accepted or he makes positive actions (posts photo, comment). The backend receives request. The database finds the matched Member information in database and updates the matched Member’s information. The system sends updated point information to the frontend. The system updates the point information in local storage and Alex will see the changes immediately. 
 
 ### 33. System Receives Login Request From Frontend 
 Frontend sends a Login request to a backend. The backend receives a request that contains user information. The backend stores a Member's current IP address into the database. Backend confirms whether the information given is matched with user data in database. The backend sends tokens and matched user information to the frontend. 
@@ -269,13 +266,16 @@ Frontend sends a Login request to a backend. The backend receives a request that
 Alex selects the "Logout" button from frontend. Frontend detects when the “Logout” button is selected. The frontend sends Alex’s sign out time to backend. Backend stores Alex's logout time. Frontend removes the session data in local storage. The frontend redirects Alex to a landing page. 
 
 ### 35. System Receives Registration Request From Frontend 
-A potential New Member (Bob) fills out a registration form and selects the "Register" button. The backend receives a request that contains potential New Member’s information. If the credit card information already exists, the backend sends an error to the frontend  and Bob must fix the error. If the credit card information does not exist in the database, The system checks that the given credit card information is valid using credit card software. If the data is valid, the system stores New Member user information into the database. The frontend redirects Bob to a Login page. If the data is **not** valid, the backend sends an error to the frontend and Bob must fix the error. 
+A potential New Member (Bob) fills out a registration form and selects the "Register" button. The backend receives a request that contains potential New Member’s information. If the credit card information already exists, the backend sends an error to the frontend and Bob must fix the error. If the credit card information does not exist in the database, the System checks that the given credit card information is valid using credit card software. If the data is valid, the system stores New Member user information into the database. The frontend redirects Bob to a Login page. If the data is **not** valid, the backend sends an error to the frontend and Bob must fix the error. 
 
 ### 36. System Retains Member's Actions (Interests)
 Alex, a Member, performs specific expected actions. The frontend detects an item being selected when a Member selects a specific post or other content on the current screen (if a Member stays longer at a specific page of *Members Only*). The frontend sends this information to the backend. The backend receives the data and stores it in the database.
 
 ### 37. System Converts URL to Shortened URL 
-The frontend sends the request to a backend. Frontend sends a request to the backend with original URL information. The backend receives the request and uses a hash function to generate a shortened URL. The System saves the shortened URL into the database. The System sends the shortened URL to the frontend. In the case of the system cannot perform shortening, it will use the original URL. 
+The frontend sends the request to a backend. Frontend sends a request to the backend with original URL information. The backend receives the request and uses a hash function to generate a shortened URL. The System saves the shortened URL into the database. The System sends the shortened URL to the frontend. In the case of the system cannot perform shortening, it will use the original URL.
+
+### 38. System Bills Customer 
+Initial System billing upon Member confirmation of credit card details [SEE # 4]. System billing also triggered upon Member updating credit card information [SEE # 7]. Further billings occur in tri-monthly frequency [SEE # 8] All billings by System occur randomly between amounts $.20-$.45. 
 
 <center><h1><b>Non-Functional Requirements</b></h1></center>
 
@@ -283,59 +283,59 @@ The frontend sends the request to a backend. Frontend sends a request to the bac
 ***React.js***   
 - React is very a simple and lightweight library that only deals with the view layer. It is not a beast like other MV* frameworks such as Angular or Ember. Since, one team is going to take care of the frontend, it's good for them to only focus on view layer using React.js 
 
-- React provides a component based structure. As a result:
+- React provides a component-based structure. As a result:
     - your app has consistent look and feel.
     - code re-use makes it easier to maintain and grow your codebase.
     - it is easier to develop your app.
 
-- Updating DOM is usually the bottleneck when it comes to the web performance. React efficiently compares the previous and current states of the virtual DOM and calculates the best way (minimum amount of updates needed) to apply these changes. This is the main reason behind React’s high performance.
+- Updating DOM is usually the bottleneck when it comes to web performance. React efficiently compares the previous and current states of the virtual DOM and calculates the best way (minimum number of updates required) to apply these changes. This is the main reason behind React’s high performance.
 
 
 ### Backend 
 ***Node.js***
 
-- Since we already decided to use JavaScript(React.js) for frontend, it’s a no-brainer to pick Node.js(Javascript).
+- Since we already decided to use JavaScript (React.js) for frontend, it’s a no-brainer to pick Node.js (JavaScript).
 
-- Node.js use V8 engines by Google. Fast and scalable web apps in a result.
+- Node.js use V8 engines by Google. Fast and scalable web applications in a result.
 
-- Thanks to this popularity, a vicious cycle is set up: your favorite API might only offer an official Node.js library, and other languages are not even considered, left for unofficial packages 
+- Thanks to its popularity, a vicious cycle is created: Your favorite API might only offer an official Node.js library, and other languages are not even considered, left for unofficial packages.
 
 
 ### Credit Card Software 
 ***Stripe.js*** 
 - In keeping with their principle of simplicity and convenience, pricing is 2.9% + $.30 per successful transaction.
 
--  There are extremely readable documentations and code samples to do efficient custom integration. 
+-  Documentation is easily readable and available code samples allow efficient custom integration. 
 
-- If developers want to test the application before making it live, they simply hit the “test” button. In comparison, PayPal makes developers set up a sandbox account and log in and out of different vendor and seller accounts.
+- If developers want to test the application before making it live, they simply hit the “Test” button. In comparison, PayPal makes developers set up a sandbox account and log in and out of different vendor and seller accounts.
 
 ### Automated Email 
 ***Sendgrid***
 
-- Deliverability. : Avoids emails going to spam folder/rejection by mail server.  
+- Deliverability: Avoids emails going to spam folder/rejection by mail server.  
 
-- Easy integration with a dead simple API.
+- Easy integration with a dead-simple API.
 
-- Track email performance, reads, etc and verify whether emails have reached their destination and verifies whether email has reached destination. 
+- Tracks email performance, reads, etc. and verifies whether emails have reached their destination and verifies when email has reached destination. 
 
 - Ability to prevent mailing to certain addresses in a separate layer, rather than relying on applications.
 
-- By using this API, we can easily send invitation emails to new members and get a notification to the server when they accept it.
+- By using this API, we can easily send invitation emails to New Members and receive a notification to the server when they accept it.
 
 ### Database 
 ***PostgreSQL***
 
-- Postgres has a strongly typed schema that leaves very little room for errors. Developers first create the schema for a table and then add rows to the table. They can also define relationships between different tables with rules so that they can store related data across several tables and avoid data duplication
+- Postgres has a strongly typed schema that leaves very little room for errors. Developers first create the schema for a table and then add rows to the table. They can also define relationships between different tables with rules so that they can store related data across several tables and avoid data duplication.
 
-- Developers can put all the complex logic in a custom function, index it and the searches will be super fast. 
+- Developers can put all the complex logic in a custom function, index it and the searches will be super-fast. 
 
 - PostgreSQL is an object-relational database, so arrays of values can be stored for most existing data types.
 
-- Is not just relational but object-relational. Advantageous over other open source SQL databases such as MySQL, MariaDB and Firebird.
+- Not only relational but object-relational. Advantageous over other open source SQL databases such as MySQL, MariaDB and Firebird.
 
-- Much more query features of SQL than MySQL.
+- Many more query features of SQL than MySQL.
 
-***Our Preliminary Tables and their Associated Values***
+***Our Preliminary Tables and Their Associated Values***
 - Member
     - email: string
     - password: string
