@@ -41,6 +41,8 @@
 
 - Ability to prevent mailing to certain addresses in a separate layer, rather than relying on applications.
 
+- By using this API, we can easily send invitation emails to new members and get a notification to the server when they accept it.
+
 ### Database 
 ***PostgreSQL***
 
