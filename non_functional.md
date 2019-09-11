@@ -1,4 +1,4 @@
-<center><h3><b>Non-Functional Requirement</b></h3></center>
+<center><h1><b>Non-Functional Requirements</b></h1></center>
 
 ### FrontEnd 
 ***React.js***   
@@ -41,6 +41,8 @@
 
 - Ability to prevent mailing to certain addresses in a separate layer, rather than relying on applications.
 
+- By using this API, we can easily send invitation emails to new members and get a notification to the server when they accept it.
+
 ### Database 
 ***PostgreSQL***
 
@@ -53,6 +55,37 @@
 - Is not just relational but object-relational. Advantageous over other open source SQL databases such as MySQL, MariaDB and Firebird.
 
 - Much more query features of SQL than MySQL.
+
+***Our Preliminary Tables and their Associated Values***
+- Member
+    - email: string
+    - password: string
+    - isAdmin: boolean
+    - points: integer
+    - credit_card_number: integer
+    - credit_card_cvv: integer
+    - is_private: boolean
+
+- Post
+    - text: string
+    - date_time: date and time field
+    - user_key: key that links post to user
+
+- Comments
+    - text: string
+    - date_time: date and time field
+    - post_key: key to linked post
+    - user_key: key to specific user
+
+- Photos
+    - photo: image file
+    - user_key: key to associated user
+
+- Filtered Photos
+    - photo: image file
+    - filter: tracks added content or filter
+    - photo_key: key to original photo
+    - user_key: key to associated user
 
 ### Application Map
 
